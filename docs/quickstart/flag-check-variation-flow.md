@@ -1,0 +1,1 @@
+![](/img/quickstart/判断variation的流程图.png))

@@ -1,0 +1,48 @@
+article {
+    /* font-family: fangsong; */
+}
+
+.md-header__title{
+    margin-left: .5rem;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg{
+    width: auto;
+}
+
+:root {
+    --md-primary-fg-color:        #443f5a;
+    --md-primary-fg-color--light: rgba(95, 220, 177, 1);
+    --md-primary-fg-color--dark:  #443f5a;
+    --md-footer-bg-color: #443f5a;
+    --md-footer-bg-color--dark: #443f5a;
+}
+
+.md-footer-meta {
+    background-color: #443f5a;
+}
+.md-footer {
+    background-color: #443f5a;
+}
+
+.md-footer__title {
+    font-size: .8rem;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {    
+    width: auto;
+    height: 35px;
+}
+
+.md-typeset ol, .md-typeset ul {
+    margin-left: 0;
+}
+
+.md-typeset {
+    font-size: .72rem;
+    letter-spacing:1.2px;
+}
+
+body{
+    letter-spacing:1px;
+}

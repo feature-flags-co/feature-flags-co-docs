@@ -1,0 +1,64 @@
+site_name: " "
+nav:
+    - 案例&实践: 
+      - 快速入门: index.md
+      - 灰度发布: quickstart/mjkgvshd.md
+      - AB测试: quickstart/effects.md
+      - 多特征联动发布: quickstart/prequisites.md
+      - 外包控制: quickstart/outsource.md
+      - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
+      - Rollout百分比分配算法: quickstart/rollout-algo.md
+      - 整合测试: quickstart/integration-test.md
+      - DevOps流水线: quickstart/devops-pipeline.md
+      - 使用者说: quickstart/feedback.md
+    - 开源管理(SDK&云整合):
+      - SDK: opensource/sdk.md
+      - 云整合: opensource/integration.md
+      - Web API: opensource/webapi.md
+
+    - 特征管理指南:
+      - 特征管理的权威指南: feature-management/guide.md
+      - "构建 Build (支柱一)": feature-management/build.md
+      - "运营 Operate (支柱二)": feature-management/operate.md
+      - "学习 Learn (支柱三)": feature-management/learn.md
+      - "赋能 Empower (支柱三)": feature-management/empower.md
+      - 敏捷开关的视野: feature-management/vision.md
+# theme:
+#   name: flatly
+#   language: zh
+theme:
+  name: material
+  language: zh 
+  logo: img/ff_logo+text_white.png
+  favicon: img/favicon.ico
+  # features:
+  #   - toc.integrate
+  features:
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+  palette:
+    - scheme: default
+      primary: "#443f5a"
+      accent: "#443f5a"
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: "#443f5a"
+      accent: "#443f5a"
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
+  search:
+    language: 'en, zh'
+copyright: Copyright &copy; 天博助力 - 敏捷开关 feature-flags.co 版权所有 京ICP备2021017279号
+plugins:
+    - mkdocs-video
