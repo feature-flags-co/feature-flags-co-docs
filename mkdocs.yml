@@ -2,6 +2,7 @@ site_name: " "
 nav:
     - 案例&实践: 
       - 快速入门: index.md
+      - 多租户与项目管理: account-setting.md
       - 灰度发布: quickstart/mjkgvshd.md
       - AB测试: quickstart/effects.md
       - 多特征联动发布: quickstart/prequisites.md
