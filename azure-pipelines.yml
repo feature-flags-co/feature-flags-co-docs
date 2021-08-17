@@ -49,7 +49,7 @@ stages:
         
         - task: AzureFileCopy@4
           inputs:
-            SourcePath: $(System.DefaultWorkingDirectory)/FeatureFlagsCo.MkDocs/site/*
+            SourcePath: $(System.DefaultWorkingDirectory)/site/*
             azureSubscription: 'azure-china-devops'
             Destination: 'AzureBlob'
             storage: 'ffc0st0sws0mkdocs'
