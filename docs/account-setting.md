@@ -8,12 +8,12 @@
 
 ## 机构的设置以及多租户管理
 
-![type:video](./videos/机构管理.mov)
+![type:video](./videos/机构管理.mp4)
 
 ## 团队管理
 
-![type:video](./videos/团队管理.mov)
+![type:video](./videos/团队管理.mp4)
 
 ## 项目管理
 
-![type:video](./videos/项目管理.mov)
+![type:video](./videos/项目管理.mp4)
