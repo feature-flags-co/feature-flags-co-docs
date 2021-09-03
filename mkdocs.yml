@@ -62,5 +62,5 @@ extra:
     language: 'en, zh'
 copyright: Copyright &copy; 天博助力 - 敏捷开关 feature-flags.co 版权所有 京ICP备2021017279号
 plugins:
-    - mkdocs-video
+    - ffc-mkdocs-video
     - search
