@@ -42,7 +42,7 @@ stages:
               python -c 'import sys; print(sys.version_info[:])'
               pip install mkdocs
               pip install mkdocs-material
-              pip install mkdocs-video
+              pip install ffc-mkdocs-video
               mkdocs build
         
 
