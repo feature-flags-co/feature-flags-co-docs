@@ -3,27 +3,36 @@ nav:
     - 案例&实践: 
       - 快速入门: index.md
       - 多租户与项目管理: account-setting.md
-      - 灰度发布: quickstart/mjkgvshd.md
-      - AB测试: quickstart/effects.md
-      - 多特征联动发布: quickstart/prequisites.md
-      - 外包控制: quickstart/outsource.md
-      - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
-      - Rollout百分比分配算法: quickstart/rollout-algo.md
-      - 整合测试: quickstart/integration-test.md
-      - DevOps流水线: quickstart/devops-pipeline.md
-      - 使用者说: quickstart/feedback.md
+      - 数据同步: 
+        - feature数据同步: quickstart/envdatasync.md
+        - 本地版与SaaS数据同步: quickstart/envdatasync.md
+      - Feature协作流: 
+        - 分量发布: quickstart/featureworkflow/progressiverelease.md
+        - 合并请求: quickstart/featureworkflow/approval.md
+        - 计划变更: quickstart/featureworkflow/schedule.md
+        - 事件触发: quickstart/featureworkflow/trigger.md
+      - 数据实验与分析: 
+        - AB测试: quickstart/effects.md
+      # - 多特征联动发布: quickstart/prequisites.md
+      # - 外包控制: quickstart/outsource.md
+      - 技术披露: 
+        - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
+        - Rollout分配算法: quickstart/rollout-algo.md
+        - 整合测试: quickstart/integration-test.md
+        - DevOps流水线: quickstart/devops-pipeline.md
+      # - 使用者说: quickstart/feedback.md
     - 开源管理(SDK&云整合):
       - SDK: opensource/sdk.md
       - 云整合: opensource/integration.md
       - Web API: opensource/webapi.md
 
-    - 特征管理指南:
-      - 特征管理的权威指南: feature-management/guide.md
-      - "构建 Build (支柱一)": feature-management/build.md
-      - "运营 Operate (支柱二)": feature-management/operate.md
-      - "学习 Learn (支柱三)": feature-management/learn.md
-      - "赋能 Empower (支柱三)": feature-management/empower.md
-      - 敏捷开关的视野: feature-management/vision.md
+    # - 特征管理指南:
+    #   - 特征管理的权威指南: feature-management/guide.md
+    #   - "构建 Build (支柱一)": feature-management/build.md
+    #   - "运营 Operate (支柱二)": feature-management/operate.md
+    #   - "学习 Learn (支柱三)": feature-management/learn.md
+    #   - "赋能 Empower (支柱三)": feature-management/empower.md
+    #   - 敏捷开关的视野: feature-management/vision.md
 # theme:
 #   name: flatly
 #   language: zh
