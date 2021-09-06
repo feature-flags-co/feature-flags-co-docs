@@ -4,8 +4,8 @@ nav:
       - 快速入门: index.md
       - 多租户与项目管理: account-setting.md
       - 数据同步: 
-        - feature数据同步: quickstart/envdatasync.md
-        - 本地版与SaaS数据同步: quickstart/envdatasync.md
+        - feature数据同步: quickstart/ffsync/envdatasync.md
+        - 本地版与SaaS数据同步: quickstart/ffsync/saaslocaldatasync.md
       - Feature协作流: 
         - 分量发布: quickstart/featureworkflow/progressiverelease.md
         - 合并请求: quickstart/featureworkflow/approval.md
