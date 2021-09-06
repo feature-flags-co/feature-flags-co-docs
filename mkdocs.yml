@@ -11,10 +11,12 @@ nav:
         - 合并请求: quickstart/featureworkflow/approval.md
         - 计划变更: quickstart/featureworkflow/schedule.md
         - 事件触发: quickstart/featureworkflow/trigger.md
+        - 联动分量: quickstart/featureworkflow/prequisiteprogressiverelease.md
       - 数据实验与分析: 
-        - A/B/n测试: quickstart/effects.md
-      # - 多特征联动发布: quickstart/prequisites.md
-      # - 外包控制: quickstart/outsource.md
+        - A/B/n测试: quickstart/experiments/abntest.md
+        - 油漆门测试: quickstart/experiments/painteddoor.md
+        - 混沌实验: quickstart/experiments/chaosengineering.md
+        - 差异测试: quickstart/experiments/championchallenger.md
       - 技术披露: 
         - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
         - Rollout分配算法: quickstart/rollout-algo.md
