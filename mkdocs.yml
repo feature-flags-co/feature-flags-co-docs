@@ -10,11 +10,14 @@ nav:
         - 事件触发: quickstart/featureworkflow/trigger.md
         - 联动分量: quickstart/featureworkflow/prequisiteprogressiverelease.md
         - Webhook: quickstart/featureworkflow/Webhook.md
+        - 操作日志: quickstart/featureworkflow/auditlog.md
       - 从数据实验到业务增长: 
         - A/B/n测试: quickstart/experiments/abntest.md
         - 油漆门测试: quickstart/experiments/painteddoor.md
         - 混沌实验: quickstart/experiments/chaosengineering.md
         - 差异测试: quickstart/experiments/championchallenger.md
+      - 辅助工具: 
+        - 代码快速定位: quickstart/codetool/codereference.md
       - 数据同步: 
         - feature数据同步: quickstart/ffsync/envdatasync.md
         - 本地版与SaaS数据同步: quickstart/ffsync/saaslocaldatasync.md
