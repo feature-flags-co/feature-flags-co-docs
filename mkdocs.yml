@@ -4,7 +4,7 @@ nav:
       - 快速入门: index.md
       - 多租户与项目管理: account-setting.md
       - Feature团队协作流: 
-        - 分量发布: quickstart/featureworkflow/progressiverelease.md
+        - 团队协作流简介: quickstart/featureworkflow/index.md
         - 合并请求: quickstart/featureworkflow/approval.md
         - 计划变更: quickstart/featureworkflow/schedule.md
         - 事件触发: quickstart/featureworkflow/trigger.md
