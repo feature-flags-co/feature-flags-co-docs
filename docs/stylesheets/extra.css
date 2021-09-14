@@ -11,18 +11,26 @@ article {
 }
 
 :root {
-    --md-primary-fg-color:        #443f5a;
+    --md-primary-fg-color:        #113f5a;
     --md-primary-fg-color--light: rgba(95, 220, 177, 1);
-    --md-primary-fg-color--dark:  #443f5a;
-    --md-footer-bg-color: #443f5a;
-    --md-footer-bg-color--dark: #443f5a;
+    --md-primary-fg-color--dark:  #113f5a;
+    --md-footer-bg-color: #113f5a;
+    --md-footer-bg-color--dark: #113f5a;
+}
+
+.md-nav__link--active {
+    color: #0089da !important;
+}
+
+.md-typeset a {
+    color: #eb7633;
 }
 
 .md-footer-meta {
-    background-color: #443f5a;
+    background-color: #113f5a;
 }
 .md-footer {
-    background-color: #443f5a;
+    background-color: #113f5a;
 }
 
 .md-footer__title {

@@ -8,20 +8,20 @@ nav:
         - 合并请求: quickstart/featureworkflow/approval.md
         - 计划变更: quickstart/featureworkflow/schedule.md
         - 事件触发: quickstart/featureworkflow/trigger.md
-        - 联动分量: quickstart/featureworkflow/prequisiteprogressiverelease.md
-        - Webhook: quickstart/featureworkflow/Webhook.md
+        # - 联动分量: quickstart/featureworkflow/prequisiteprogressiverelease.md
+        - Webhook: quickstart/featureworkflow/webhook.md
         - 操作日志: quickstart/featureworkflow/auditlog.md
       - 从数据实验到业务增长: 
         - A/B/n测试: quickstart/experiments/abntest.md
-        - 油漆门测试: quickstart/experiments/painteddoor.md
-        - 混沌实验: quickstart/experiments/chaosengineering.md
-        - 差异测试: quickstart/experiments/championchallenger.md
+        # - 油漆门测试: quickstart/experiments/painteddoor.md
+        # - 混沌实验: quickstart/experiments/chaosengineering.md
+        # - 差异测试: quickstart/experiments/championchallenger.md
       - 辅助工具: 
         - 代码快速定位: quickstart/codetool/codereference.md
       - 数据同步: 
         - feature数据同步: quickstart/ffsync/envdatasync.md
         - 本地版与SaaS数据同步: quickstart/ffsync/saaslocaldatasync.md
-        - 导出数据至三方工具: quickstart/ffsync/exportdata.md
+        # - 导出数据至三方工具: quickstart/ffsync/exportdata.md
       - 技术披露: 
         - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
         - Rollout分配算法: quickstart/rollout-algo.md
@@ -56,17 +56,17 @@ theme:
     - navigation.tabs
   palette:
     - scheme: default
-      primary: "#443f5a"
-      accent: "#443f5a"
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+      primary: "#113f5a"
+      accent: "#113f5a"
+      # toggle:
+      #   icon: material/toggle-switch-off-outline
+      #   name: Switch to dark mode
     - scheme: slate
-      primary: "#443f5a"
-      accent: "#443f5a"
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+      primary: "#113f5a"
+      accent: "#113f5a"
+      # toggle:
+      #   icon: material/toggle-switch
+      #   name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
