@@ -35,3 +35,19 @@
 点击某个触发器中的"重置"按钮，可以重置触发器链接。确认后，触发器当前URL将失效，重置后请立即复制并保存URL。
 
 ![](/img/featureworkflow/trigger5.png)
+
+## 关闭与激活trigger
+
+点击触发器下的"关闭"按钮，即可关闭trigger。关闭后，调用触发器时将不会产生任何效果。
+
+![](/img/featureworkflow/trigger6.png)
+
+且关闭后，左侧的图标将变灰。点击"激活"按钮，可重新使触发器可用。
+
+![](/img/featureworkflow/trigger7.png)
+
+## 删除trigger
+
+点击trigger下的"删除"图标按钮，即可删除触发器。删除后，调用触发器时将不会产生任何效果。
+
+![](/img/featureworkflow/trigger8.png)
