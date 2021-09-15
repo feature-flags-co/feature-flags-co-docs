@@ -78,5 +78,7 @@ extra:
     language: 'en, zh'
 copyright: Copyright &copy; 天博助力 - 敏捷开关 feature-flags.co 版权所有 京ICP备2021017279号
 plugins:
-    - ffc-mkdocs-video
-    - search
+  - ffc-mkdocs-video
+  - search
+markdown_extensions:
+  - pymdownx.tabbed
