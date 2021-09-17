@@ -30,8 +30,10 @@ nav:
       # - 使用者说: quickstart/feedback.md
     - 开源管理(SDK&云整合):
       - SDK: opensource/sdk.md
-      - 云整合: opensource/integration.md
+      # - 云整合: opensource/integration.md
       - Web API: opensource/webapi.md
+    
+    - 操作后台: https://portal.feature-flags.co
 
     # - 特征管理指南:
     #   - 特征管理的权威指南: feature-management/guide.md
@@ -82,3 +84,6 @@ plugins:
   - search
 markdown_extensions:
   - pymdownx.tabbed
+  - pymdownx.superfences
+  - admonition
+  - attr_list
