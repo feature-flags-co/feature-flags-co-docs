@@ -25,8 +25,8 @@ nav:
       - 技术披露: 
         - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
         - Rollout分配算法: quickstart/rollout-algo.md
-        - 整合测试: quickstart/integration-test.md
-        - DevOps流水线: quickstart/devops-pipeline.md
+        # - 整合测试: quickstart/integration-test.md
+        # - DevOps流水线: quickstart/devops-pipeline.md
       # - 使用者说: quickstart/feedback.md
     - 开源管理(SDK&云整合):
       - SDK: opensource/sdk.md
