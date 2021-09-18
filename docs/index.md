@@ -60,36 +60,56 @@
 === "Javascript"
     [点击查看GitHub上的开源代码与示例](https://github.com/feature-flags-co/ffc-js-client-sdk)  ,  Github上的demo文件夹内有示例代码
 
+    Github中的基础文档可以帮助运行示例程序，了解更多的使用细节。下面为注入程序的关键代码和注释。
+
+    初始化敏捷开关
     ```javascript
     // 初始化sdk，传入环境Secret Key和用户信息
-    FFCJsClient.initialize(
-      '{项目中对应的环境的secret key}', 
-      {
-        key: '{用户名唯一标识符, 如sessionId, cookieId等}',
-        customizeProperties: [  // 可加入任何在后台分流分群时所需要的属性
+    FFCJsClient.initialize('YThmLWRmZjUtNCUyMDIxMDkxNzA3NTYyMV9fMl9fMjJfXzExNl9fZGVmYXVsdF82NTM3Mg==');
+    ```
+    在用户登录后传递用户信息给敏捷开关SDK
+    ```javascript
+    // 初始化用户信息，通常这一步会在登录后被调用
+    FFCJsClient.initUserInfo({
+        userName: 'sdk-sample-js-1252',
+        email: '',
+        key: 'sdk-sample-js-1252',
+        customizeProperties: [
             {
-                name: '外放地址', //自定义属性的名字，案例中对应为“外放地址”
-                value: '{自定义属性的值}' //自定义属性的值，案例中应取得url的参数列表
+                name: "外放地址",
+                value: "?from=zhihu&group=pm"
             }
         ]
-      }
-    );
-
-
-    // 使用variation函数调用开关服务，获取相应的返回值
-    const result = FFCJsClient.variation('{feature-flag-key}', '{默认返回值}');
-    // 根据返回值不同，显示不同的官网话术版本
-    if (result === '产品经理版') {
+    });
+    ```
+    从敏捷开关服务器获取分配给用户的变量值，并根据业务逻辑执行不同的功能模块
+    ```javascript
+    const result = FFCJsClient.variation('主页---话术版本', '产品经理版1');
+    if (result === '产品经理版1') {
         document.getElementById('version-a').style.display = 'block';
     }
-    else if (result === '程序员版') {
+    else if (result === '程序员版1') {
         document.getElementById('version-b').style.display = 'block';
     }
-
-
-    // 使用trackCustomEvent函数，对需要做转化率分析的地方进行埋点事件捕捉
-    FFCJsClient.trackCustomEvent({ eventName: '触发开始使用按钮' });
+    else if (result === '产品经理版2') {
+        document.getElementById('version-c').style.display = 'block';
+    }
+    else {
+        document.getElementById('version-a').style.display = 'block';
+    }
     ```
+    如果需要同步请求的函数，可以在源码"/src/index.js"文件中寻找"variationAsync"函数
+
+    捕捉点击按钮的事件(custom event)
+    ```javascript
+    await FFCJsClient.trackCustomEventAsync([
+        {
+        eventName: "开始使用点击事件"
+        }
+    ]);
+    如果需要异步请求的函数，可以在源码"/src/index.js"文件中寻找"trackCustomEvent"函数
+    ```
+
 === "Vue"
     [点击查看GitHub上的开源代码与示例](https://github.com/feature-flags-co/ffc-vue) 
     ```javascript
