@@ -30,10 +30,18 @@
 
 如果还没有建立账户的读者，可以先[注册新用户](https://portal.feature-flags.co/login/register) 。对于用户注册、账户管理的具体细节，可参考教程[多租户与项目管理](https://docs.feature-flags.co/account-setting/)。
 
-功能开关的创建、使用、用户分流:
+登入开关管理页面后首先我们要创建一个敏捷开关，这个开关如上文所示用来分流不同的用户群体以便不同的用户群体看到不同版本的官网。
+点击“添加开关”按钮，然后在对话框入中输入开关的名字，点击“确定”即可。
+![](/img/quickstart/add-new-bouton.png)
+在刚创建的开关中进入“设置“页面我们开始设置分流，在返回状态管理下设置两个返回值对应不同的官网版本（A版以产品经理、运营为导向的热迭代话术版本，B版以技术、运维为导向的热迭代话术版本），然后点击“提交”即可，这两个新设置的值会通过SDK返回。
+![](/img/quickstart/add-return-value.png)
+接下来我们设置“开关用户”属性来区别不同的用户群体。进入"开关用户管理页面"，点击“属性管理”按钮添加一个新属性。属性会通过SDK交互，在这个案例里我们添加的属性可以传递官网url中的参数，这样我们就可以定位不同的用户群体。
+![](/img/quickstart/add-new-attri.png)
+最后在我们刚创建的开关中的“目标条件”页面只需设置三组相应的规则就可完成开关创建。首先添加两组定向的分流规则分班对应A版群体产品经理、运营以及B版群体技术、运维，然后再添加默认规则对应从官网地址直接访问的用户，最后点击“保存设置”完成开关创建。
+![](/img/quickstart/add-new-rules.png)
+<!--功能开关的创建、使用、用户分流:
 ![type:video](./videos/开关的建立与分流分组.mp4)
-
-
+-->
 ### 低代码包裹不同版本
 
 创建好开关后，需要研发团队将这些开关植入到产品代码中。
@@ -49,8 +57,8 @@
         key: '{用户名唯一标识符, 如sessionId, cookieId等}',
         customizeProperties: [  // 可加入任何在后台分流分群时所需要的属性
             {
-                name: '{自定义属性的名字}',
-                value: '{自定义属性的值}'
+                name: '外放地址', //自定义属性的名字，案例中对应为“外放地址”
+                value: '{自定义属性的值}' //自定义属性的值，案例中应取得url的参数列表
             }
         ]
       }
@@ -60,10 +68,10 @@
     // 使用variation函数调用开关服务，获取相应的返回值
     const result = FFCJsClient.variation('{feature-flag-key}', '{默认返回值}');
     // 根据返回值不同，显示不同的官网话术版本
-    if (result === '{variation 1}') {
+    if (result === '产品经理版') {
         document.getElementById('version-a').style.display = 'block';
     }
-    else if (result === '{variation 2}') {
+    else if (result === '程序员版') {
         document.getElementById('version-b').style.display = 'block';
     }
 
