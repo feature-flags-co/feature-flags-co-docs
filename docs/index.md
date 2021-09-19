@@ -58,7 +58,7 @@
 创建好开关后，需要研发团队将这些开关植入到产品代码中。让开关函数包裹代码，使用户可以通过后台控制功能特性的分流、分群和完成数据实验。
 
 === "Javascript"
-    [点击查看GitHub上的开源代码与示例](https://github.com/feature-flags-co/ffc-js-client-sdk)  ,  Github上的demo文件夹内有示例代码
+    [点击查看GitHub上的开源代码与示例](https://github.com/feature-flags-co/ffc-js-client-sdk) 
 
     Github中的基础文档可以帮助运行示例程序，了解更多的使用细节。下面为注入程序的关键代码和注释。
 
@@ -107,14 +107,65 @@
         eventName: "开始使用点击事件"
         }
     ]);
-    如果需要异步请求的函数，可以在源码"/src/index.js"文件中寻找"trackCustomEvent"函数
     ```
+    如果需要异步请求的函数，可以在源码"/src/index.js"文件中寻找"trackCustomEvent"函数
 
 === "Vue"
     [点击查看GitHub上的开源代码与示例](https://github.com/feature-flags-co/ffc-vue) 
+
+    Github中的基础文档可以帮助运行示例程序，了解更多的使用细节。下面为注入程序的关键代码和注释。
+
+    初始化敏捷开关
     ```javascript
-    
+    // 初始化sdk，传入环境Secret Key和用户信息
+    FFCPlugin.initialize({ environmentSecret: 'YThmLWRmZjUtNCUyMDIxMDkxNzA3NTYyMV9fMl9fMjJfXzExNl9fZGVmYXVsdF82NTM3Mg==' })
     ```
+
+    在用户登录后传递用户信息给敏捷开关SDK
+    ```javascript
+    // 初始化用户信息，通常这一步会在登录后被调用
+    FFCPlugin.initUserInfo({
+    userName: 'sdk-sample-js-1252',
+    email: 'ts',
+    key: 'sdk-sample-js-1252',
+    customizeProperties: [
+        {
+        name: "外放地址",
+        value: "?from=zhihu&group=pm"
+        }
+    ]
+    })
+    ``` 
+
+    从敏捷开关服务器获取分配给用户的变量值，并根据业务逻辑执行不同的功能模块
+    ```javascript
+    async variation()
+    {
+    const result = await this.$FfcPlugins.variationAsync(
+        "主页---话术版本",
+        "产品经理版1"
+    );
+    this.version = result.variationValue;
+    }
+    ```
+
+    捕捉点击按钮的事件(custom event)
+    ```javascript
+    async trackCustomEvent(){
+    const data = [
+        {
+        eventName: "开始使用点击事件",
+        },
+    ];
+    const result = await this.$FfcPlugins.trackCustomEventAsync(data);
+    if (result) {
+        alert("事件发送成功");
+    } else {
+        alert("事件发送失败");
+    }
+    }
+    ```
+
 === "微信小程序"
     [点击查看GitHub上的开源代码与示例](https://github.com/feature-flags-co/ffc-sdk-wechat-miniprogram) 
     

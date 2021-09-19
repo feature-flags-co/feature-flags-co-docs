@@ -2,6 +2,9 @@
 ### Javascript
 [https://github.com/feature-flags-co/ffc-js-client-sdk](https://github.com/feature-flags-co/ffc-js-client-sdk)
 
+### Vue
+[https://github.com/feature-flags-co/ffc-vue](https://github.com/feature-flags-co/ffc-vue)
+
 ### Angular
 [https://github.com/feature-flags-co/ffc-angular-sdk](https://github.com/feature-flags-co/ffc-angular-sdk)
 
@@ -11,14 +14,6 @@
 ### 微信小程序SDK
 [https://github.com/feature-flags-co/ffc-sdk-wechat-miniprogram](https://github.com/feature-flags-co/ffc-sdk-wechat-miniprogram)
 
-### Csharp
-即将到来，敬请期待
-
-### Android - Kotlin
-即将到来，敬请期待
-
-### Android - Java
-即将到来，敬请期待
 
 ### 其他
 其他语言、技术框架的SDK已被安排。大家可以在github中留言、投票
