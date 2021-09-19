@@ -35,20 +35,19 @@
 
 登入“开关管理”页面后首先我们要创建一个敏捷开关，这个开关如上文所示用来分流不同的用户群体以便不同的用户群体看到不同版本的官网。
 点击“添加开关”按钮，然后在对话框入中输入开关的名称，点击“确定”即可。
-
-![](/img/quickstart/add-new-bouton.png)
+![](/img/quickstart/add-new-bouton.png){.img-fluid}
 
 在刚创建的开关中进入“设置“页面我们开始设置分流，在“返回状态管理”下设置返回值对应不同的官网版本（A版以产品经理、运营为导向的热迭代话术版本，B版以技术、运维为导向的热迭代话术版本），然后点击“提交”即可，返回值会通过SDK返回给用户。
 
-![](/img/quickstart/add-return-value.png)
+![](/img/quickstart/add-return-value.png){.img-fluid}
 
 接下来我们设置“开关用户”属性来区别不同的用户群体。进入"开关用户管理页面"，点击“属性管理”按钮添加一个新属性。属性会通过SDK交互，在这个案例里我们添加的属性可以传递官网url中的参数，这样我们就可以定位不同的用户群体。
 
-![](/img/quickstart/add-new-attri.png)
+![](/img/quickstart/add-new-attri.png){.img-fluid}
 
 最后在我们刚创建的开关中的“目标条件”页面设置三组相应的规则。首先添加两组定向的分流规则分别对应A版群体产品经理、运营以及B版群体技术、运维，然后再添加默认规则对应从官网地址直接访问的用户，最后点击“保存设置”完成开关创建。
 
-![](/img/quickstart/add-new-rules.png)
+![](/img/quickstart/add-new-rules.png){.img-fluid}
 
 <!--功能开关的创建、使用、用户分流:
 ![type:video](./videos/开关的建立与分流分组.mp4)
