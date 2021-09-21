@@ -74,6 +74,11 @@ theme:
     code: Roboto Mono
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/simpleLightbox.min.css
+extra_javascript:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - javascripts/simpleLightbox.min.js
+  - javascripts/extensions.js
 extra:
   generator: false
   search:
