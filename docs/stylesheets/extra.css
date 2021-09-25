@@ -81,3 +81,8 @@ a.boxedThumb:hover {
     transform: scale(1.05);
     z-index: 5;
 }
+
+
+video{
+    height:auto !important;
+}
