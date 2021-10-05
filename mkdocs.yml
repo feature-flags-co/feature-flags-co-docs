@@ -1,39 +1,39 @@
 site_name: " "
 nav:
-    - 案例&实践: 
-      - 快速入门: index.md
-      - 多租户与项目管理: account-setting.md
-      - Feature团队协作流: 
-        - 团队协作流简介: quickstart/featureworkflow/index.md
-        - 合并请求: quickstart/featureworkflow/approval.md
-        - 计划变更: quickstart/featureworkflow/schedule.md
-        - 事件触发: quickstart/featureworkflow/trigger.md
-        # - 联动分量: quickstart/featureworkflow/prequisiteprogressiverelease.md
-        - Webhook: quickstart/featureworkflow/webhook.md
-        - 操作日志: quickstart/featureworkflow/auditlog.md
-      - 从数据实验到业务增长: 
-        - A/B/n测试: quickstart/experiments/abntest.md
-        # - 油漆门测试: quickstart/experiments/painteddoor.md
-        # - 混沌实验: quickstart/experiments/chaosengineering.md
-        # - 差异测试: quickstart/experiments/championchallenger.md
-      - 辅助工具: 
-        - 代码快速定位: quickstart/codetool/codereference.md
+    - 快速入门: 
+      - 简单介绍: index.md
+      - 1. 建立开关: quickstart/quickstart/create-flag.md
+      - 2. 添加自定义属性: quickstart/quickstart/add-attribute.md
+      - 3. 集成开关到产品中: quickstart/quickstart/sdk-integration.md
+      - 4. 细粒度发布、回退功能: quickstart/quickstart/release-rollback.md
+      - 5. 数据收集: quickstart/quickstart/send-event.md
+      - 6. 数据实验: quickstart/quickstart/abtest.md
+    - Feature团队协作流: 
+      - 团队协作流简介: quickstart/featureworkflow/index.md
+      - 合并请求: quickstart/featureworkflow/approval.md
+      # - 计划变更: quickstart/featureworkflow/schedule.md
+      - 事件触发: quickstart/featureworkflow/trigger.md
+      # - Webhook: quickstart/featureworkflow/webhook.md
+      # - 操作日志: quickstart/featureworkflow/auditlog.md
       - 数据同步: 
         - feature数据同步: quickstart/ffsync/envdatasync.md
         - 本地版与SaaS数据同步: quickstart/ffsync/saaslocaldatasync.md
-        # - 导出数据至三方工具: quickstart/ffsync/exportdata.md
-      - 技术披露: 
-        - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
-        - Rollout分配算法: quickstart/rollout-algo.md
-        # - 整合测试: quickstart/integration-test.md
-        # - DevOps流水线: quickstart/devops-pipeline.md
-      # - 使用者说: quickstart/feedback.md
-    - 开源管理(SDK&云整合):
+      - 多租户与项目管理: account-setting.md
+    - 从数据实验到业务增长: 
+      - A/B/n测试: quickstart/experiments/abntest.md
+      # - 导出数据至三方工具: quickstart/ffsync/exportdata.md
+    - 低代码集成(SDK):
       - SDK: opensource/sdk.md
-      # - 云整合: opensource/integration.md
       - Web API: opensource/webapi.md
+      - 辅助工具: 
+        - 代码快速定位: quickstart/codetool/codereference.md
+    - 网站链接: 
+      - 官方网站: https://www.feature-flags.co
+      - Portal: https://portal.feature-flags.co
     
-    - 操作后台: https://portal.feature-flags.co
+    - 技术披露: 
+      - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
+      - Rollout分配算法: quickstart/rollout-algo.md
 
     # - 特征管理指南:
     #   - 特征管理的权威指南: feature-management/guide.md
@@ -42,20 +42,20 @@ nav:
     #   - "学习 Learn (支柱三)": feature-management/learn.md
     #   - "赋能 Empower (支柱三)": feature-management/empower.md
     #   - 敏捷开关的视野: feature-management/vision.md
-# theme:
-#   name: flatly
-#   language: zh
+repo_url: https://github.com/feature-flags-co/feature-flags-co
 theme:
   name: material
   language: zh 
   logo: img/ff_logo+text_white.png
   favicon: img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
   # features:
   #   - toc.integrate
   features:
     # - navigation.instant
     - navigation.sections
-    - navigation.tabs
+    # - navigation.tabs
   palette:
     - scheme: default
       primary: "#113f5a"
@@ -80,9 +80,12 @@ extra_javascript:
   - javascripts/simpleLightbox.min.js
   - javascripts/extensions.js
 extra:
-  generator: false
+  # generator: false
   search:
     language: 'en, zh'
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/feature-flags-co/feature-flags-co
 copyright: Copyright &copy; 天博助力 - 敏捷开关 feature-flags.co 版权所有 京ICP备2021017279号
 plugins:
   - ffc-mkdocs-video

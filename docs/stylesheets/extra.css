@@ -1,5 +1,5 @@
 article {
-    /* font-family: fangsong; */
+    font-family: sans-serif;
 }
 
 .md-header__title{
@@ -85,4 +85,11 @@ a.boxedThumb:hover {
 
 video{
     height:auto !important;
+}
+
+@media screen and (min-width: 76.25em){
+    .md-nav__item--section {
+        display: block;
+        margin: 1px 0 1.25em 0;
+    }
 }
