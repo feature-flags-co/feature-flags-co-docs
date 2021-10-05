@@ -1,47 +1,48 @@
 site_name: " "
 nav:
-    - 快速入门: 
-      - 简单介绍: index.md
-      - 1. 建立开关: quickstart/quickstart/create-flag.md
-      - 2. 添加自定义属性: quickstart/quickstart/add-attribute.md
-      - 3. 集成开关到产品中: quickstart/quickstart/sdk-integration.md
-      - 4. 细粒度发布、回退功能: quickstart/quickstart/release-rollback.md
-      - 5. 数据收集: quickstart/quickstart/send-event.md
-      - 6. 数据实验: quickstart/quickstart/abtest.md
-    - Feature团队协作流: 
-      - 团队协作流简介: quickstart/featureworkflow/index.md
-      - 合并请求: quickstart/featureworkflow/approval.md
-      # - 计划变更: quickstart/featureworkflow/schedule.md
-      - 事件触发: quickstart/featureworkflow/trigger.md
-      # - Webhook: quickstart/featureworkflow/webhook.md
-      # - 操作日志: quickstart/featureworkflow/auditlog.md
-      - 数据同步: 
-        - feature数据同步: quickstart/ffsync/envdatasync.md
-        - 本地版与SaaS数据同步: quickstart/ffsync/saaslocaldatasync.md
-      - 多租户与项目管理: account-setting.md
-    - 从数据实验到业务增长: 
-      - A/B/n测试: quickstart/experiments/abntest.md
-      # - 导出数据至三方工具: quickstart/ffsync/exportdata.md
-    - 低代码集成(SDK):
-      - SDK: opensource/sdk.md
-      - Web API: opensource/webapi.md
-      - 辅助工具: 
-        - 代码快速定位: quickstart/codetool/codereference.md
-    - 网站链接: 
-      - 官方网站: https://www.feature-flags.co
-      - Portal: https://portal.feature-flags.co
-    
-    - 技术披露: 
-      - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
-      - Rollout分配算法: quickstart/rollout-algo.md
+  - 简介: index.md
+  - 快速入门:
+    - quickstart/create-flag.md
+    - 1. 建立开关: quickstart/create-flag.md
+    - 2. 添加自定义属性: quickstart/add-attribute.md
+    - 3. 集成开关到产品中: quickstart/sdk-integration.md
+    - 4. 细粒度发布、回退功能: quickstart/release-rollback.md
+    - 5. 数据收集: quickstart/send-event.md
+    - 6. 数据实验: quickstart/abtest.md
+  - Feature团队协作流: 
+    - featureworkflow/index.md
+    - 合并请求: featureworkflow/approval.md
+    # - 计划变更: quickstart/featureworkflow/schedule.md
+    - 事件触发: featureworkflow/trigger.md
+    # - Webhook: quickstart/featureworkflow/webhook.md
+    # - 操作日志: quickstart/featureworkflow/auditlog.md
+    - 数据同步: 
+      - feature数据同步: ffsync/envdatasync.md
+      - 本地版与SaaS数据同步: ffsync/saaslocaldatasync.md
+    - 多租户与项目管理: account-setting.md
+  - 从数据实验到业务增长: 
+    - A/B/n测试: experiments/abntest.md
+    # - 导出数据至三方工具: quickstart/ffsync/exportdata.md
+  - 低代码集成(SDK):
+    - SDK: opensource/sdk.md
+    - Web API: opensource/webapi.md
+    - 辅助工具: 
+      - 代码快速定位: codetool/codereference.md
+  - 网站链接: 
+    - 官方网站: https://www.feature-flags.co
+    - Portal: https://portal.feature-flags.co
+  
+  - 技术披露: 
+    - Flag判断条件流程图: quickstart/flag-check-variation-flow.md
+    - Rollout分配算法: quickstart/rollout-algo.md
 
-    # - 特征管理指南:
-    #   - 特征管理的权威指南: feature-management/guide.md
-    #   - "构建 Build (支柱一)": feature-management/build.md
-    #   - "运营 Operate (支柱二)": feature-management/operate.md
-    #   - "学习 Learn (支柱三)": feature-management/learn.md
-    #   - "赋能 Empower (支柱三)": feature-management/empower.md
-    #   - 敏捷开关的视野: feature-management/vision.md
+  # - 特征管理指南:
+  #   - 特征管理的权威指南: feature-management/guide.md
+  #   - "构建 Build (支柱一)": feature-management/build.md
+  #   - "运营 Operate (支柱二)": feature-management/operate.md
+  #   - "学习 Learn (支柱三)": feature-management/learn.md
+  #   - "赋能 Empower (支柱三)": feature-management/empower.md
+  #   - 敏捷开关的视野: feature-management/vision.md
 repo_url: https://github.com/feature-flags-co/feature-flags-co
 theme:
   name: material
@@ -53,8 +54,11 @@ theme:
   # features:
   #   - toc.integrate
   features:
+    # - navigation.tracking
+    # - navigation.expand
+    - navigation.indexes
     # - navigation.instant
-    - navigation.sections
+    # - navigation.sections
     # - navigation.tabs
   palette:
     - scheme: default
@@ -90,6 +94,7 @@ copyright: Copyright &copy; 天博助力 - 敏捷开关 feature-flags.co 版权�
 plugins:
   - ffc-mkdocs-video
   - search
+  - section-index
 markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences

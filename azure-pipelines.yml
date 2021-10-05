@@ -43,6 +43,7 @@ stages:
               pip install mkdocs
               pip install mkdocs-material
               pip install ffc-mkdocs-video
+              pip install mkdocs-section-index
               mkdocs build
         
 

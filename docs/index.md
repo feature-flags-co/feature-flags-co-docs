@@ -5,12 +5,12 @@
 
 **快速入门**将介绍如何从0到1的创建、使用敏捷开关：
 
-- [第1步, 创建一个功能开关](/quickstart/quickstart/create-flag/)
-- [第2步, 创建自定义属性](/quickstart/quickstart/add-attribute/)
-- [第3步, 集成开关到产品中](/quickstart/quickstart/sdk-integration/)
-- [第4步, 细粒度发布、回退功能](/quickstart/quickstart/release-rollback/)
-- [第5步, 数据收集](/quickstart/quickstart/send-event/)
-- [第6步, 数据实验](/quickstart/quickstart/abtest/)
+- [第1步, 创建一个功能开关](/quickstart/create-flag/)
+- [第2步, 创建自定义属性](/quickstart/add-attribute/)
+- [第3步, 集成开关到产品中（SDK、Web API）](/quickstart/sdk-integration/)
+- [第4步, 细粒度发布、回退功能](/quickstart/release-rollback/)
+- [第5步, 收集数据（pageview, click, custom event）](/quickstart/send-event/)
+- [第6步, 数据实验（ab测试）](/quickstart/abtest/)
 
 
 ## Feature flags的好处

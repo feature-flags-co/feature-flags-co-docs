@@ -92,4 +92,12 @@ video{
         display: block;
         margin: 1px 0 1.25em 0;
     }
+/* 
+    .md-nav__link{
+        border: 1px solid gray;
+        border-left: 0px;
+        border-right: 0px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    } */
 }
