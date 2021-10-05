@@ -90,6 +90,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/feature-flags-co/feature-flags-co
+      name: 'feature-flags-co'
 copyright: Copyright &copy; 天博助力 - 敏捷开关 feature-flags.co 版权所有 京ICP备2021017279号
 plugins:
   - ffc-mkdocs-video
