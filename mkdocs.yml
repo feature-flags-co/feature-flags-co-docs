@@ -3,7 +3,7 @@ nav:
   - 简介: index.md
   - 快速入门:
     - quickstart/create-flag.md
-    - 1. 建立开关: quickstart/create-flag.md
+    - 1. 创建开关: quickstart/create-flag.md
     - 2. 添加自定义属性: quickstart/add-attribute.md
     - 3. 集成开关到产品中: quickstart/sdk-integration.md
     - 4. 细粒度发布、回退功能: quickstart/release-rollback.md
@@ -50,29 +50,28 @@ theme:
   logo: img/ff_logo+text_white.png
   favicon: img/favicon.ico
   icon:
-    repo: fontawesome/brands/github
-  # features:
-  #   - toc.integrate
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
   features:
-    # - navigation.tracking
-    # - navigation.expand
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.sections
-    # - navigation.tabs
   palette:
     - scheme: default
-      primary: "#113f5a"
-      accent: "#113f5a"
-      # toggle:
-      #   icon: material/toggle-switch-off-outline
-      #   name: Switch to dark mode
+      primary: "#4CB287"
+      accent: "#4CB287"
     - scheme: slate
-      primary: "#113f5a"
-      accent: "#113f5a"
-      # toggle:
-      #   icon: material/toggle-switch
-      #   name: Switch to light mode
+      primary: "#4CB287"
+      accent: "#4CB287"
   font:
     text: Roboto
     code: Roboto Mono
@@ -88,9 +87,9 @@ extra:
   search:
     language: 'en, zh'
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/feature-flags-co/feature-flags-co
-      name: 'feature-flags-co'
+    # - icon: fontawesome/brands/github
+    #   link: https://github.com/feature-flags-co/feature-flags-co
+    #   name: 'feature-flags-co'
 copyright: Copyright &copy; 天博助力 - 敏捷开关 feature-flags.co 版权所有 京ICP备2021017279号
 plugins:
   - ffc-mkdocs-video
@@ -98,6 +97,11 @@ plugins:
   - section-index
 markdown_extensions:
   - pymdownx.tabbed
-  - pymdownx.superfences
+  - footnotes
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - attr_list

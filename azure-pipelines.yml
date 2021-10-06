@@ -44,6 +44,7 @@ stages:
               pip install mkdocs-material
               pip install ffc-mkdocs-video
               pip install mkdocs-section-index
+              pip install pymdown-extensions
               mkdocs build
         
 

@@ -5,5 +5,6 @@ RUN pip install mkdocs
 RUN pip install mkdocs-material
 RUN pip install ffc-mkdocs-video
 RUN pip install mkdocs-section-index
+pip install pymdown-extensions
 # RUN pip install mkdocs-bootswatch
 CMD mkdocs serve -a 0.0.0.0:80
