@@ -7,15 +7,31 @@ Web API提供开发者自己调用API实现与开关的连接。
     Content-Type: application/json
 
     {
-        "environmentSecret": "{environment key}",
-        "featureFlagKeyName": "{开关 keyName}",
-        "ffUserName": "{终端用户的username}",
-        "ffUserEmail": "{终端用户的email}",
+        "environmentSecret": "{项目的环境key}",
+        "featureFlagKeyName": "{开关Key}",
+        "ffUserName": "{用户名}",
+        "ffUserEmail": "{用户邮箱（选填）}",
+        "ffUserKeyId": "{用户在产品中的唯一Id}",
         "ffUserCustomizedProperties": [
             {
-                "name":"{自定义属性的名称}", 
-                "value":"{自定义属性的值}"
+                "name": "{自定义属性名称}",
+                "value": "{自定义属性值}"
             }
-        ],
-        "ffUserKeyId": "{终端用户的唯一ID}"
+        ]
     }
+
+## 返回值
+
+```json
+{
+    "localId": 1,
+    "displayOrder": 1,
+    "variationValue": "状态值"
+}
+```
+
+| 变量          |           描述               |
+| :---------------- | :----------------------------------- |
+| localId             | 开关内部的返回状态的Id |
+| displayOrder        | 开关设置中显示状态的顺序 |
+| variationValue       | 状态值 |
