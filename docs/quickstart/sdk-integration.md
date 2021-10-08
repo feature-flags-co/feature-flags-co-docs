@@ -24,7 +24,11 @@
     npm install ffc-js-client-sdk --save
     ```
 
-    如果产品程序支持Import，则可以使用如下代码Import SDK
+    浏览器的Import方式
+    ```
+    <script src="../node_modules/ffc-js-client-sdk/umd/index.js" ></script>
+    ```
+    Typescript 以及支持 import 语法的 JavaScript
     ```
     // For Javascript and Typescript
     import { FFCJsClient } from 'ffc-js-client-sdk/esm';
@@ -65,15 +69,6 @@
     ```
     > 如果需要异步请求的函数，可以在源码"/src/index.js"文件中寻找"variationAsync"函数
 
-    ----
-
-    除Javascript的SDK外，我们对其他的主流框架进行了适配化的SDK，可在Github中查看更多内容:
-
-    | 语言框架           |           GitHub地址                |
-    | :---------------- | :----------------------------------- |
-    | Vue             | [Github源码、使用说明、Demo](https://github.com/feature-flags-co/ffc-vue) |
-    | Angular           | [Github源码、使用说明、Demo](https://github.com/feature-flags-co/ffc-angular-sdk) |
-    | React           | 正在开发中... |
 
 === "微信小程序"
     
