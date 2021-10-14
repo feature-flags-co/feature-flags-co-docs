@@ -1,3 +1,5 @@
+# 实验数据收集
+
 数据收集，即通过主动埋点或自动埋点的方式，收集用户的访问页面(pageview), 点击事件(click)和自定义事件(custom event)。需要使用SDK和Web API进行自动或手动的埋点。
 
 === "Javascript"
