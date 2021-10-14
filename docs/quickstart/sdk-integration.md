@@ -45,7 +45,7 @@
     {
         baseUrl: string, // 敏捷开关服务器地址 （只有使用本地安装的服务器才需要设置此参数， Saas版无需修改此参数）
         appType: string, // 应用类型， 默认为 'Javascript'
-        throttleWait: number // throttle 的等待时间， 单位为毫秒，默认值为5000， 涉及 trackCustomEventAsync， trackCustomEvent， trackAsync， track, variationAsync，variation 这几个方法
+        throttleWait: number // throttle 的等待时间， 单位为毫秒，默认值为5000， 涉及 variationAsync，variation 这几个方法
     }
     ```
     如果我们只想修改 throttle 的等待时间，只需要按下边的例子调用 initialize 方法
@@ -107,7 +107,7 @@
     {
         baseUrl: string, // 敏捷开关服务器地址 （只有使用本地安装的服务器才需要设置此参数， Saas版无需修改此参数）
         appType: string, // 应用类型， 默认为 'Javascript'
-        throttleWait: number // throttle 的等待时间， 单位为毫秒，默认值为5000， 涉及 trackCustomEventAsync， trackCustomEvent， trackAsync， track, variationAsync，variation 这几个方法
+        throttleWait: number // throttle 的等待时间， 单位为毫秒，默认值为5000， 涉及 variationAsync，variation 这几个方法
     }
     ```
     如果我们只想修改 throttle 的等待时间，只需要按下边的例子调用 initialize 方法
@@ -288,10 +288,6 @@
 
 SDK 对于以下方法采用了 throttle 策略， 默认时间窗口为5000ms，5000ms之内的相同请求只会发送一次
 
-- trackCustomEventAsync
-- trackCustomEvent
-- trackAsync
-- track
 - variationAsync
 - variation
 
