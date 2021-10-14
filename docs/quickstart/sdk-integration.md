@@ -15,7 +15,56 @@
 | `{开关Key}` |  点击左侧菜单"开关管理"->在列表中找到对应的开关，点击"详情"->在开关编辑页面的"设置"tab下找到"Key Name"并复制其值    |
 
 ## SDK与Web API集成
-=== "Javascript"
+
+<!-- === "Javascript (无代码版)"
+
+    以下为Js SDK的快速使用说明。此SDK支持Typescript，并且可以在Vue, Angular, React中被直接引用与使用。[Github源码、使用说明、Demo](https://github.com/feature-flags-co/ffc-js-client-sdk)。
+
+    Npm安装插件
+    ```
+    npm install ffc-js-client-sdk --save
+    ```
+
+    浏览器的Import方式
+    ```
+    <script src="../node_modules/ffc-js-client-sdk/umd/index.js" ></script>
+    ```
+    Typescript 以及支持 import 语法的 JavaScript
+    ```
+    // For Javascript and Typescript
+    import { FFCJsClient } from 'ffc-js-client-sdk/esm';
+    ```
+
+    初始化敏捷开关
+    ```javascript
+    // 初始化sdk，传入环境Key
+    FFCJsClient.initialize('{项目的环境key}');
+    ```
+    在用户登录后传递用户信息给敏捷开关SDK
+    ```javascript
+    // 初始化用户信息，通常这一步会在登录后被调用
+    FFCJsClient.initUserInfo({
+        userName: '{用户名}',
+        email: '{用户邮箱（选填）}}',
+        key: '{用户在产品中的唯一Id}',
+        customizeProperties: [ 
+            {
+                name: "{自定义属性名称}",
+                value: "{自定义属性值}"
+            }
+        ]
+    });
+    ```
+    无需埋点，后台配置，快速进行转化率测试
+
+    // 文档正在更新中，敬请期待
+    // 案例1. 对某一个功能模块进行发布、回退
+    // 案例2. 对人群分流进行转化率测试
+
+    ``` -->
+
+
+=== "Javascript (低代码版)"
 
     以下为Js SDK的快速使用说明。此SDK支持Typescript，并且可以在Vue, Angular, React中被直接引用与使用。[Github源码、使用说明、Demo](https://github.com/feature-flags-co/ffc-js-client-sdk)。
 
