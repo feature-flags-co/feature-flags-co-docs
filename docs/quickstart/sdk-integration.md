@@ -40,6 +40,20 @@
     // 初始化sdk，传入环境Key
     FFCJsClient.initialize('{项目的环境key}');
     ```
+    上述方法中可以传入第二个可选参数，是一个包含如下可选选项的对象：
+    ```
+    {
+        baseUrl: string, // 敏捷开关服务器地址 （只有使用本地安装的服务器才需要设置此参数， Saas版无需修改此参数）
+        appType: string, // 应用类型， 默认为 'Javascript'
+        throttleWait: number // throttle 的等待时间， 单位为毫秒，默认值为5000， 涉及 variationAsync，variation 这几个方法
+    }
+    ```
+    如果我们只想修改 throttle 的等待时间，只需要按下边的例子调用 initialize 方法
+    ```javascript
+    // 初始化sdk，传入环境Key
+    FFCJsClient.initialize('{项目的环境key}'， {throttleWait： 2000});
+    ```
+
     在用户登录后传递用户信息给敏捷开关SDK
     ```javascript
     // 初始化用户信息，通常这一步会在登录后被调用
@@ -87,6 +101,19 @@
     ```javascript
     // 初始化sdk，传入环境Key
     FFCJsClient.initialize('{项目的环境key}');
+    ```
+    上述方法中可以传入第二个可选参数，是一个包含如下可选选项的对象：
+    ```
+    {
+        baseUrl: string, // 敏捷开关服务器地址 （只有使用本地安装的服务器才需要设置此参数， Saas版无需修改此参数）
+        appType: string, // 应用类型， 默认为 'Javascript'
+        throttleWait: number // throttle 的等待时间， 单位为毫秒，默认值为5000， 涉及 variationAsync，variation 这几个方法
+    }
+    ```
+    如果我们只想修改 throttle 的等待时间，只需要按下边的例子调用 initialize 方法
+    ```javascript
+    // 初始化sdk，传入环境Key
+    FFCJsClient.initialize('{项目的环境key}'， {throttleWait： 2000});
     ```
     在用户登录后传递用户信息给敏捷开关SDK
     ```javascript
@@ -259,7 +286,16 @@
 
 #### 设置最小调用间隔
 
-可以修改或丰富我们的SDK源码，对同一个开关的调用，设置一个最小时间间隔。即如果上次调用该开关在1分钟以内，则使用上次返回的状态值，反之才重新调用远端API获取最新的开关状态值。
+SDK 对于以下方法采用了 throttle 策略， 默认时间窗口为5000ms，5000ms之内的相同请求只会发送一次
+
+- variationAsync
+- variation
+
+也可以在初始化时，通过传入可选参数的形式修改默认时间窗口值，如下：
+```javascript
+// 初始化sdk，传入环境Key
+FFCJsClient.initialize('{项目的环境key}'， {throttleWait： 2000});
+```
 
 -------
 
