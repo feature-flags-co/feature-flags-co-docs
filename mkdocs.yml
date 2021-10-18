@@ -1,7 +1,7 @@
 site_name: " "
 nav:
   - 简介: index.md
-  - 无代码版体验: quickstart/codeless/create-flag.md
+  - 无代码体验版: quickstart/codeless/create-flag.md
   - 低代码版快速入门:
     - quickstart/create-flag.md
     - 1. 创建开关: quickstart/create-flag.md

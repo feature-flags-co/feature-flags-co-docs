@@ -1,39 +1,38 @@
 ## 集成SDK到应用程序中
 
-=== "Javascript网站应用"
-    Npm安装插件
-    ```
-    npm install ffc-js-client-sdk --save
-    ```
-    Import插件
-    ```
-    // Html5 import 方法
-    <script src="../node_modules/ffc-js-client-sdk/umd/index.js" ></script>
+Npm安装插件
+```
+npm install ffc-js-client-sdk --save
+```
+Import插件
+```
+// Html5 import 方法
+<script src="../node_modules/ffc-js-client-sdk/umd/index.js" ></script>
 
-    // Typescript 以及支持 import 语法的 JavaScript
-    import { FFCJsClient } from 'ffc-js-client-sdk/esm';
-    ```
+// Typescript 以及支持 import 语法的 JavaScript
+import { FFCJsClient } from 'ffc-js-client-sdk/esm';
+```
 
-    初始化敏捷开关
-    ```javascript
-    // 初始化sdk，传入环境Key
-    FFCJsClient.initialize('{项目的环境key}');
-    ```
-    在用户登录后传递用户信息给敏捷开关SDK
-    ```javascript
-    // 初始化用户信息，通常这一步会在登录后被调用
-    FFCJsClient.initUserInfo({
-        userName: '{用户名}',
-        email: '{用户邮箱（选填）}}',
-        key: '{用户在产品中的唯一Id}',
-        customizeProperties: [ 
-            {
-                name: "{自定义属性名称}",
-                value: "{自定义属性值}"
-            }
-        ]
-    });
-    ```
+初始化敏捷开关
+```javascript
+// 初始化sdk，传入环境Key
+FFCJsClient.initialize('{项目的环境key}');
+```
+在用户登录后传递用户信息给敏捷开关SDK
+```javascript
+// 初始化用户信息，通常这一步会在登录后被调用
+FFCJsClient.initUserInfo({
+    userName: '{用户名}',
+    email: '{用户邮箱（选填）}}',
+    key: '{用户在产品中的唯一Id}',
+    customizeProperties: [ 
+        {
+            name: "{自定义属性名称}",
+            value: "{自定义属性值}"
+        }
+    ]
+});
+```
 
 ## 创建开关
 
