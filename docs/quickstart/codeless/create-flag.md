@@ -55,13 +55,19 @@ FFCJsClient.initUserInfo({
 
 ![type:video](/quickstart/codeless/img/20211018_125803.mp4)
 
-## 添加数据收集指标
+## 数据指标与数据实验
 
-> 文档正在更新中，敬请期待...
+### Pageview
 
-## 创建数据实验
+![type:video](/quickstart/codeless/img/20211019_112418.mp4)
 
-> 文档正在更新中，敬请期待...
+> 上述演示用视频使用的是敏捷开关后台网站应用，请在自己的项目中选择对应的pageview的web url
+
+### 点击事件
+
+![type:video](/quickstart/codeless/img/20211019_113337.mp4)
+
+> 上述演示用视频使用的是敏捷开关后台网站应用，请在自己的项目中选择对应的功能模块css selector
 
 ## 查看数据实验报表
 
