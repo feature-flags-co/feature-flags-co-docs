@@ -10,14 +10,14 @@
 
 ![](/quickstart/img/2-2添加新属性.png)
 
-> 注：这里的属性名称需与第3不中代码json格式中的自定义属性名称相同
+> 注：这里的属性名称需与[第3步](/quickstart/sdk-integration/)中代码json格式中的自定义属性名称相同
 
 -----
 
 ## 后续操作
 
 - [第3步, 集成开关到产品中（SDK、Web API）](/quickstart/sdk-integration/)
-- [第4步, 细粒度发布、回退功能](/quickstart/release-rollback/)
+- [第4步, Feature管理、发布、回退](/quickstart/release-rollback/)
 - [第5步, 收集数据（pageview, click, custom event）](/quickstart/send-event/)
 - [第6步, 数据实验（ab测试）](/quickstart/abtest/)
 

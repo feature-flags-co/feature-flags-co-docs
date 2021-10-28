@@ -1,14 +1,14 @@
 site_name: " "
 nav:
   - 简介: index.md
-  - 无代码体验版: quickstart/codeless/create-flag.md
-  - 低代码版快速入门:
+  # - 对照数据实验(AB测试): codeless/index.md
+  - Feature flags+AB测试:
     - quickstart/create-flag.md
     - 1. 创建开关: quickstart/create-flag.md
     - 2. 添加自定义属性: quickstart/add-attribute.md
-    - 3. 集成开关到产品中: quickstart/sdk-integration.md
-    - 4. 细粒度发布、回退功能: quickstart/release-rollback.md
-    - 5. 数据收集: quickstart/send-event.md
+    - 3. SDK&Web API集成: quickstart/sdk-integration.md
+    - 4. Feature管理、发布、回退: quickstart/release-rollback.md
+    - 5. 数据收集(无埋点&自定义): quickstart/send-event.md
     - 6. 数据实验: quickstart/abtest.md
   - Feature团队协作流: 
     - featureworkflow/index.md
@@ -16,7 +16,7 @@ nav:
     # - 计划变更: quickstart/featureworkflow/schedule.md
     - 事件触发: featureworkflow/trigger.md
     # - Webhook: quickstart/featureworkflow/webhook.md
-    # - 操作日志: quickstart/featureworkflow/auditlog.md
+    - 操作日志: featureworkflow/auditlog.md
     - 数据同步: 
       - feature数据同步: ffsync/envdatasync.md
       - 本地版与SaaS数据同步: ffsync/saaslocaldatasync.md

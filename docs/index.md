@@ -1,25 +1,36 @@
 
 
 
-敏捷开关是一个开源的feature flags + AB测试解决方案。他允许团队中任意指定人员将产品的功能在任意时间实时的发布给任意用户（活用户群），同理也可以将发布出去的功能进行细粒度的秒级回退。使产研过程中的权利向产品经理前倾，无代码控制功能的进行更多的市场验证操作（如无需手动埋点的AB测试）。教程
+敏捷开关是一个开源的feature flags + AB测试解决方案。他允许团队中任意指定人员将产品的功能在任意时间实时的发布给任意用户（活用户群），同理也可以将发布出去的功能进行细粒度的秒级回退。使产研过程中的权利向产品经理前倾，追求超级低代码、无埋点、无门槛的对照数据实验(AB测试)工具。
 
-## 无代码体验版
-**[无代码体验版](/quickstart/codeless/create-flag/)**将以最小化的集成成本让产品经理体验到更多的产品特质（建议先尝试此版本）。
+<!-- 本文中介绍了两种使用产品的方案
 
-[点击立刻体验](/quickstart/codeless/create-flag/)
+1. `对照数据实验（AB测试）`，此方案提供了无埋点、无门槛的AB测试解决方案。即在不麻烦工程师和数据分析师的情况下，对不同的特性做AB测试，并直接获得有统计标注的结果。
+2. `Feature flags + AB测试`，此方案为工程师团队提供了全面的低代码feature flags解决方案，并描述了如何使用feature flags来帮助团队更顺畅的做AB测试。 -->
 
-## 低代码版快速入门
-**低代码版快速入门**将介绍如何从0到1的创建、使用敏捷开关：
+
+<!-- ## 对照数据实验(AB测试)
+
+详情请查看章节[对照数据实验(AB测试)](/codeless/index) -->
+
+## Feature flags + AB测试
+** Feature flags + AB测试**将介绍如何从0到1的创建、使用敏捷开关，并基于开关做数据实验：
 
 - [第1步, 创建一个功能开关](/quickstart/create-flag/)
 - [第2步, 创建自定义属性](/quickstart/add-attribute/)
 - [第3步, 集成开关到产品中（SDK、Web API）](/quickstart/sdk-integration/)
-- [第4步, 细粒度发布、回退功能](/quickstart/release-rollback/)
+- [第4步, Feature管理、发布、回退](/quickstart/release-rollback/)
 - [第5步, 收集数据（pageview, click, custom event）](/quickstart/send-event/)
 - [第6步, 数据实验（ab测试）](/quickstart/abtest/)
 
 
-## Feature flags的好处
+### Feature flags团队协作管理
+
+敏捷开关为feature flags团队协作管理提供了诸如合并请求、事件触发、操作日志等功能。
+
+详情请查看章节[Feature团队协作流](/featureworkflow/)
+
+### Feature flags的好处
 
 Feature flags从多个维度保障了产品的高速迭代（或者称为迭代心跳率）:
 
@@ -30,6 +41,11 @@ Feature flags从多个维度保障了产品的高速迭代（或者称为迭代�
 - 改善业务协作，赋予相关工作人员直接控制产品功能的权力，可更高效的获得真实的数据反馈，减少开发人员的负担。
 - 让工程师快乐和高效，提高开发人员的生产力、创造力和舒适度，让开发人员可以更安静的度过每个夜晚和假期。
 - 等等
+
+
+<!-- ### 无代码秒级下线新功能
+
+![type:video](/quickstart/codeless/img/秒级下线.mp4) -->
 
 ## 适用人群
 

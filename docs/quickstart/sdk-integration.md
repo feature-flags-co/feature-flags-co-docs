@@ -78,29 +78,25 @@
     ``` -->
 
 
-=== "Javascript (低代码版)"
+=== "Javascript"
 
     以下为Js SDK的快速使用说明。此SDK支持Typescript，并且可以在Vue, Angular, React中被直接引用与使用。[Github源码、使用说明、Demo](https://github.com/feature-flags-co/ffc-js-client-sdk)。
 
-    Npm安装插件
+    Npm安装插件(支持typescript和javascript)
     ```
     npm install ffc-js-client-sdk --save
+
+    import { FFCJsClient } from 'ffc-js-client-sdk/esm';
     ```
 
-    浏览器的Import方式
+    CDN安装
     ```
-    <script src="../node_modules/ffc-js-client-sdk/umd/index.js" ></script>
-    ```
-    Typescript 以及支持 import 语法的 JavaScript
-    ```
-    // For Javascript and Typescript
-    import { FFCJsClient } from 'ffc-js-client-sdk/esm';
+    <script src="https://assets.feature-flags.co/sdks/ffc-sdk.js" ></script>
     ```
 
     初始化敏捷开关
     ```javascript
-    // 初始化sdk，传入环境Key
-    FFCJsClient.initialize('{项目的环境key}');
+    window.FFCJsClient.initialize('##{项目的环境key}##');
     ```
     上述方法中可以传入第二个可选参数，是一个包含如下可选选项的对象：
     ```
@@ -113,19 +109,19 @@
     如果我们只想修改 throttle 的等待时间，只需要按下边的例子调用 initialize 方法
     ```javascript
     // 初始化sdk，传入环境Key
-    FFCJsClient.initialize('{项目的环境key}'， {throttleWait： 2000});
+    FFCJsClient.initialize('##{项目的环境key}##'， {throttleWait： 2000});
     ```
     在用户登录后传递用户信息给敏捷开关SDK
     ```javascript
     // 初始化用户信息，通常这一步会在登录后被调用
     FFCJsClient.initUserInfo({
-        userName: '{用户名}',
-        email: '{用户邮箱（选填）}}',
-        key: '{用户在产品中的唯一Id}',
+        userName: '##{用户名}##',
+        email: '##{用户邮箱（选填）}}##',
+        key: '##{用户在产品中的唯一Id}##',
         customizeProperties: [ 
             {
-                name: "{自定义属性名称}",
-                value: "{自定义属性值}"
+                name: "##{自定义属性名称}##",
+                value: "##{自定义属性值}##"
             }
         ]
     });
@@ -144,6 +140,7 @@
 
     ```
     > 如果需要异步请求的函数，可以在源码"/src/index.js"文件中寻找"variationAsync"函数
+    
 
 
 === "微信小程序"
@@ -301,7 +298,7 @@ FFCJsClient.initialize('{项目的环境key}'， {throttleWait： 2000});
 
 ## 后续操作
 
-- [第4步, 细粒度发布、回退功能](/quickstart/release-rollback/)
+- [第4步, Feature管理、发布、回退](/quickstart/release-rollback/)
 - [第5步, 收集数据（pageview, click, custom event）](/quickstart/send-event/)
 - [第6步, 数据实验（ab测试）](/quickstart/abtest/)
 
