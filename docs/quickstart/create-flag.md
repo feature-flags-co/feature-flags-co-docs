@@ -10,7 +10,18 @@
 
 ![](/quickstart/img/1-1创建开关.png)
 
-3, 输入开关的名称，点击"确定"。进入开关编辑页
+3, 选择开关类型
+
+
+| 条件逻辑           | Description                          |
+| :---------------- | :----------------------------------- |
+| **传统开关**       | 即一个使用敏捷开关低代码控制功能发布、回退、分流的开关。  |
+| **预分流开关**     | 即功能的分流由客户自己系统控制，而敏捷开关支付则开关埋点。  |
+
+![](/quickstart/img/1-2-a选择开关类型.png)
+
+
+4, 输入开关的名称，点击"确定"。进入开关编辑页
 
 ![](/quickstart/img/1-2开关编辑初始页面.png)
 
@@ -52,7 +63,7 @@
 - [第2步, 创建自定义属性](/quickstart/add-attribute/)
 - [第3步, 集成开关到产品中（SDK、Web API）](/quickstart/sdk-integration/)
 - [第4步, Feature管理、发布、回退](/quickstart/release-rollback/)
-- [第5步, 收集数据（pageview, click, custom event）](/quickstart/send-event/)
+- [第5步, 数据收集(无埋点&自定义)](/quickstart/send-event/)
 - [第6步, 数据实验（ab测试）](/quickstart/abtest/)
 
 !!! 推荐章节

@@ -1,4 +1,4 @@
-# 数据实验
+# 数据实验（无门槛AB测试）
 
 
 1. 进入数据实验页面点击"Metric"切换到指标定义Tab页，创建指标
@@ -37,5 +37,5 @@
 - [第2步, 创建自定义属性](/quickstart/add-attribute/)
 - [第3步, 集成开关到产品中（SDK、Web API）](/quickstart/sdk-integration/)
 - [第4步, Feature管理、发布、回退](/quickstart/release-rollback/)
-- [第5步, 收集数据（pageview, click, custom event）](/quickstart/send-event/)
+- [第5步, 数据收集(无埋点&自定义)](/quickstart/send-event/)
 - [第6步, 数据实验（ab测试）](/quickstart/abtest/)

@@ -81,7 +81,7 @@
 
 ## 后续操作
 
-- [第5步, 收集数据（pageview, click, custom event）](/quickstart/send-event/)
+- [第5步, 数据收集(无埋点&自定义)](/quickstart/send-event/)
 - [第6步, 数据实验（ab测试）](/quickstart/abtest/)
 
 !!! 推荐章节

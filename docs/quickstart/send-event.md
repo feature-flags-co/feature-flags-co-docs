@@ -1,6 +1,24 @@
-# 实验数据收集
+# 实验指标制定与数据收集
 
-数据收集，即通过主动埋点或自动埋点的方式，收集用户的访问页面(pageview), 点击事件(click)和自定义事件(custom event)。需要使用SDK和Web API进行自动或手动的埋点。
+数据收集，即通过主动埋点或无埋点的方式，收集用户的访问页面(pageview)，点击事件(click)，自定义事件(custom event)等其他事件。需要使用SDK和Web API进行自动或手动的埋点。
+
+## 无埋点获得实验数据
+
+无埋点主要服务于客户端应用程序，如网站应用、微信小程序、安卓APP、iOS APP等。
+为了不侵占客户数据，并且不污染用户的网络环境，我们只收集数据实验中所需指标的数据。
+
+具体指标的制定与实验的建立，请参照[第6步, 数据实验（ab测试）](/quickstart/abtest/)
+
+
+### SDK自动根据
+
+## 低代码获得实验数据
+
+### Pageview
+
+### Click
+
+### Custom Event
 
 === "Javascript"
     目前Javascript SDK（[Github源码、使用说明、Demo](https://github.com/feature-flags-co/ffc-js-client-sdk)）还不支持自动埋点，需要手动调用`trackCustomEventAsync`函数或`trackCustomEvent`进行埋点，捕捉自定义事件(custom event)。Pageview和Click的自动捕捉会在11月左右发布。如下为在程序中捕捉custom event的代码示例：

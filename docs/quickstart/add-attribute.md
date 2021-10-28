@@ -18,6 +18,6 @@
 
 - [第3步, 集成开关到产品中（SDK、Web API）](/quickstart/sdk-integration/)
 - [第4步, Feature管理、发布、回退](/quickstart/release-rollback/)
-- [第5步, 收集数据（pageview, click, custom event）](/quickstart/send-event/)
+- [第5步, 数据收集(无埋点&自定义)](/quickstart/send-event/)
 - [第6步, 数据实验（ab测试）](/quickstart/abtest/)
 

@@ -9,7 +9,7 @@ nav:
     - 3. SDK&Web API集成: quickstart/sdk-integration.md
     - 4. Feature管理、发布、回退: quickstart/release-rollback.md
     - 5. 数据收集(无埋点&自定义): quickstart/send-event.md
-    - 6. 数据实验: quickstart/abtest.md
+    - 6. 数据实验(无门槛AB测试): quickstart/abtest.md
   - Feature团队协作流: 
     - featureworkflow/index.md
     - 合并请求: featureworkflow/approval.md
