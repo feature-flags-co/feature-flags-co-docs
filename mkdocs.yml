@@ -1,8 +1,8 @@
 site_name: " "
 nav:
   - 简介: index.md
-  # - 对照数据实验(AB测试): codeless/index.md
-  - Feature flags+AB测试:
+  - Web应用无代码案例: codeless/index.md
+  - 低代码版快速入门:
     - quickstart/create-flag.md
     - 1. 创建开关: quickstart/create-flag.md
     - 2. 添加自定义属性: quickstart/add-attribute.md

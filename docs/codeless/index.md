@@ -1,28 +1,26 @@
-### 1. 创建预分流开关
-![type:video](/codeless/img/创建预分流开关.mp4)
 
-### 2. 在项目中集成SDK并初始化
+![type:video](/codeless/img/202111060040.mp4)
+
+### 在项目中集成SDK并初始化
 
 抱歉，这个过程还是需要工程师介入。但只需要这一次即可，无需在其他步骤烦劳工程师。
 
 
 === "Javascript"
 
-    引入SDK
+    引入SDK(CDN方式)
     ```
     // CDN方式
     <script src="https://assets.feature-flags.co/sdks/ffc-sdk.js" ></script>
+    ```
 
-    // NPM方式 (javascript & typescript)
+    引入SDK(NPM方式)
+    ```javascript
     npm install ffc-js-client-sdk --save
 
     import { FFCJsClient } from 'ffc-js-client-sdk/esm';
-    ```
 
-
-
-    初始化敏捷开关
-    ```javascript
+    //初始化敏捷开关
     window.FFCJsClient.initialize(
         '{项目的环境key}',
         {
@@ -42,8 +40,6 @@
     手机APP的SDK已经规划，我们将会根据客户的反馈一次进行开发与上线。
 
 -------
-
-### 无代码指定AB测试中的版本位置
 
 
 
