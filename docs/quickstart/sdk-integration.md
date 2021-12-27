@@ -264,12 +264,12 @@
 
 #### 默认值
 
-我们在获取开关状态值时，可以加入一个默认值。即当获取出现bug时（服务端无响应、服务端返回非200、SDK自身出异常），返回默认值。
+我们在获取开关状态值时，可以加入一个默认值。当获取开关状态发生错误时（客户端网络断开、服务端无响应或返回非 200、SDK 内部异常等），返回默认值。
 
 以Javascript为例
 ```javascript
-    const result = FFCJsClient.variation('{开关Key}', '{自己设定的默认值}');
-    if (result === '{自己设定的默认值}') {
+    const variation = FFCJsClient.variation('{开关Key}', '{自己设定的默认值}');
+    if (variation === '{自己设定的默认值}') {
         // 执行默认的功能模块
     }
     else {
