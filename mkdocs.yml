@@ -21,9 +21,8 @@ nav:
       - feature数据同步: ffsync/envdatasync.md
       - 本地版与SaaS数据同步: ffsync/saaslocaldatasync.md
     - 多租户与项目管理: account-setting.md
-  # - 从数据实验到业务增长: 
-  #   - A/B/n测试: experiments/abntest.md
-    # - 导出数据至三方工具: quickstart/ffsync/exportdata.md
+  - 数据收集与分析: 
+    - 报表数据收集: analytics/analytic-board-data-collect.md
   - SDK与Web API:
     - SDK: opensource/sdk.md
     - Web API: opensource/webapi.md
