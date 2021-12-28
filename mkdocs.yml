@@ -10,7 +10,7 @@ nav:
     - 5. 数据收集(无埋点&自定义): quickstart/send-event.md
     - 6. 数据实验(无门槛AB测试): quickstart/abtest.md
   - 团队协作: 
-    - featureworkflow/index.md
+    - 增长黑客: featureworkflow/growth-hacking.md
     - 合并请求: featureworkflow/approval.md
     # - 计划变更: quickstart/featureworkflow/schedule.md
     - 事件触发: featureworkflow/trigger.md
