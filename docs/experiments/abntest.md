@@ -3,7 +3,7 @@
 
 本文章的案例与quick start的案例相同，可以点击视频查看完整案例
 
-![type:video](../../videos/quickstart1080_4700.mp4)
+![type:video](../videos/quickstart1080_4700.mp4)
 
 
 ## 置信区间
