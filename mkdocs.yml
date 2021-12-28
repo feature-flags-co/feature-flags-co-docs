@@ -22,7 +22,7 @@ nav:
       - 本地版与SaaS数据同步: ffsync/saaslocaldatasync.md
     - 多租户与项目管理: account-setting.md
   - 数据收集与分析: 
-    - 报表数据收集: analytics/analytic-board-data-collect.md
+    - 报表数据: analytics/analytic-board-data-collect-and-analyze.md
   - SDK与Web API:
     - SDK: opensource/sdk.md
     - Web API: opensource/webapi.md
