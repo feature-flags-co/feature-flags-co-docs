@@ -49,13 +49,11 @@
 
 ### 接口域名
 
-测试环境域名: https://ffc-api-ce2-dev.chinacloudsites.cn
-
-正式环境域名: https://api.feature-flags.co
+https://api.feature-flags.co
 
 ### 必要参数
 
-- envSecret: 环境密钥 (必须放在 header 上，防止 secret 泄露)
+- envSecret: 环境密钥 (必须放在 header 上)
 
 ### 示例
 
