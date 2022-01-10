@@ -12,6 +12,9 @@
 ### Python SDK
 [https://github.com/feature-flags-co/ffc-python-sdk](https://github.com/feature-flags-co/ffc-python-sdk)
 
+### Java SDK
+[https://github.com/feature-flags-co/ffc-java-sdk](https://github.com/feature-flags-co/ffc-java-sdk)
+
 ### 微信小程序SDK
 [https://github.com/feature-flags-co/ffc-sdk-wechat-miniprogram](https://github.com/feature-flags-co/ffc-sdk-wechat-miniprogram)
 
