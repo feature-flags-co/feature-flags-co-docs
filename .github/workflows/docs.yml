@@ -28,8 +28,6 @@ jobs:
           cd github_secrets
           echo "DISTRIBUTION_ID:$DISTRIBUTION_ID" >> "$output_file"
           echo "S3_CLOUDFRONT:$S3_CLOUDFRONT" >> "$output_file"
-          echo "AWS_ACCESS_KEY_ID:$AWS_ACCESS_KEY_ID" >> "$output_file"
-          echo "AWS_SECRET_ACCESS_KEY:$AWS_SECRET_ACCESS_KEY" >> "$output_file"
 
       - uses: jakejarvis/s3-sync-action@master
         name: upload github secret to s3
@@ -54,7 +52,18 @@ jobs:
       - uses: jakejarvis/s3-sync-action@master
         name: Upload App to S3 Bucket
         with:
-          args: --follow-symlinks --delete
+          args: --follow-symlinks --delete --exclude 'index.html'
+        env:
+          AWS_S3_BUCKET: ${{ env.S3_CLOUDFRONT }}
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "cn-northwest-1"
+          SOURCE_DIR: "build"
+
+      - uses: jakejarvis/s3-sync-action@master
+        name: Set index.html no-cache
+        with:
+          args: --follow-symlinks --delete --cache-control no-cache --exclude '*' --include 'index.html'
         env:
           AWS_S3_BUCKET: ${{ env.S3_CLOUDFRONT }}
           AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
