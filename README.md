@@ -1,12 +1,41 @@
-Docs of product feature-flags.co
+# Website
 
-To build it run:
-1. install python >= 3.6
-2. pip install mkdocs
-2. pip install mkdocs-material
-    pip install ffc-mkdocs-video
-    pip install mkdocs-section-index
-    pip install pymdown-extensions
-4. mkdocs serve or python -m mkdocs serve if mkdocs unavailable
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-If the command mkdocs is not available, insert it to your system path
+### Installation
+
+```
+$ yarn
+```
+
+### Local Development
+
+```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

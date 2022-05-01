@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "敏捷开关 | 文档",
+    "description": "The title in the navbar"
+  },
+  "item.label.主页": {
+    "message": "主页",
+    "description": "Navbar item with label 主页"
+  },
+  "item.label.生态集成": {
+    "message": "生态集成",
+    "description": "Navbar item with label 生态集成"
+  },
+  "item.label.SDKs": {
+    "message": "SDKs",
+    "description": "Navbar item with label SDKs"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label. ": {
+    "message": " ",
+    "description": "Navbar item with label  "
+  }
+}
