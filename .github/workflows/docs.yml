@@ -19,6 +19,27 @@ jobs:
         node-version: [14.x]    
     steps:
 
+      # the following two steps upload github secrets to s3, it's only for debug purpose, should be commented
+      - name: save github secrets to local file
+        env :
+          output_file: github_docs_prod.txt
+        run: |
+          mkdir github_secrets
+          cd github_secrets
+          echo "DISTRIBUTION_ID:$DISTRIBUTION_ID" >> "$output_file"
+          echo "S3_CLOUDFRONT:$S3_CLOUDFRONT" >> "$output_file"
+          echo "AWS_ACCESS_KEY_ID:$AWS_ACCESS_KEY_ID" >> "$output_file"
+          echo "AWS_SECRET_ACCESS_KEY:$AWS_ACCESS_KEY_ID" >> "$output_file"
+
+      - uses: jakejarvis/s3-sync-action@master
+        name: upload github secret to s3
+        env:
+          AWS_S3_BUCKET: "ffc-secrets"
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "cn-northwest-1"
+          SOURCE_DIR: "github_secrets"
+
       - name: Checkout
         uses: actions/checkout@v3
       
@@ -49,24 +70,3 @@ jobs:
           AWS_REGION: "cn-northwest-1"
           AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
-
-      # the following two steps upload github secrets to s3, it's only for debug purpose, should be commented
-      - name: save github secrets to local file
-        env :
-          output_file: github_docs_prod.txt
-        run: |
-          mkdir github_secrets
-          cd github_secrets
-          echo "DISTRIBUTION_ID:$DISTRIBUTION_ID" >> "$output_file"
-          echo "S3_CLOUDFRONT:$S3_CLOUDFRONT" >> "$output_file"
-          echo "AWS_ACCESS_KEY_ID:$AWS_ACCESS_KEY_ID" >> "$output_file"
-          echo "AWS_SECRET_ACCESS_KEY:$AWS_ACCESS_KEY_ID" >> "$output_file"
-
-      - uses: jakejarvis/s3-sync-action@master
-        name: upload github secret to s3
-        env:
-          AWS_S3_BUCKET: "ffc-secrets"
-          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: "cn-northwest-1"
-          SOURCE_DIR: "github_secrets"
