@@ -28,8 +28,6 @@ jobs:
           cd github_secrets
           echo "DISTRIBUTION_ID:$DISTRIBUTION_ID" >> "$output_file"
           echo "S3_CLOUDFRONT:$S3_CLOUDFRONT" >> "$output_file"
-          echo "AWS_ACCESS_KEY_ID:$AWS_ACCESS_KEY_ID" >> "$output_file"
-          echo "AWS_SECRET_ACCESS_KEY:$AWS_SECRET_ACCESS_KEY" >> "$output_file"
 
       - uses: jakejarvis/s3-sync-action@master
         name: upload github secret to s3
