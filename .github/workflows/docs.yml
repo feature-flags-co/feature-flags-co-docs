@@ -1,0 +1,81 @@
+name: Docs website
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-prod:
+    name : Deploy to production
+    runs-on: ubuntu-latest
+
+    env:
+      S3_CLOUDFRONT: ${{ secrets.S3_CLOUDFRONT }}
+      DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    strategy:
+      matrix:
+        node-version: [14.x]    
+    steps:
+
+      # the following two steps upload github secrets to s3, it's only for debug purpose, should be commented
+      - name: save github secrets to local file
+        env :
+          output_file: github_docs_prod.txt
+        run: |
+          mkdir github_secrets
+          cd github_secrets
+          echo "DISTRIBUTION_ID:$DISTRIBUTION_ID" >> "$output_file"
+          echo "S3_CLOUDFRONT:$S3_CLOUDFRONT" >> "$output_file"
+
+      - uses: jakejarvis/s3-sync-action@master
+        name: upload github secret to s3
+        env:
+          AWS_S3_BUCKET: "ffc-secrets"
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "cn-northwest-1"
+          SOURCE_DIR: "github_secrets"
+
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: npm build and install
+        run: |
+              npm install
+              npm run build
+              echo current dir is: 
+              ls
+        shell: bash
+  
+      - uses: jakejarvis/s3-sync-action@master
+        name: Upload App to S3 Bucket
+        with:
+          args: --follow-symlinks --delete --exclude 'index.html'
+        env:
+          AWS_S3_BUCKET: ${{ env.S3_CLOUDFRONT }}
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "cn-northwest-1"
+          SOURCE_DIR: "build"
+
+      - uses: jakejarvis/s3-sync-action@master
+        name: Set index.html no-cache
+        with:
+          args: --follow-symlinks --delete --cache-control no-cache --exclude '*' --include 'index.html'
+        env:
+          AWS_S3_BUCKET: ${{ env.S3_CLOUDFRONT }}
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "cn-northwest-1"
+          SOURCE_DIR: "build"
+
+      - name: Create CloudFront Cache Invalidation
+        uses: chetan/invalidate-cloudfront-action@master
+        env:
+          DISTRIBUTION: ${{ env.DISTRIBUTION_ID }}
+          PATHS: "/*"
+          AWS_REGION: "cn-northwest-1"
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
