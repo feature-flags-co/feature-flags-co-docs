@@ -137,6 +137,13 @@ html[data-theme='light'] footer {
   .main-wrapper {
     padding-top: 15px;
   }
+
+  .markdown ul li {
+    font-size: 14px;
+  }
+  .markdown ul {
+    padding-left: 15px;
+  }
 }
 
 .DocSearch-Button-Placeholder {

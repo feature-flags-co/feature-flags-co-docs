@@ -7,7 +7,7 @@ export default function QuickStartFrontend() {
         <div className="">
             <div className="row">
                 <div className={clsx('col col--6 ')}>
-                    <a className={styles.docA} href=''>
+                    <a className={styles.docA} onClick={()=>alert('正在积极完善中，请稍等几日')}>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle}>
                                 📄️ Javascript Web APP
@@ -19,7 +19,7 @@ export default function QuickStartFrontend() {
                     </a>
                 </div>
                 <div className={clsx('col col--6 ')}>
-                    <a className={styles.docA} href=''>
+                    <a className={styles.docA} onClick={()=>alert('正在积极完善中，请稍等几日')}>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle}>
                                 📄️ React Web APP
@@ -35,7 +35,7 @@ export default function QuickStartFrontend() {
 
             <div className="row">
                 <div className={clsx('col col--6 ')}>
-                    <a className={styles.docA} href=''>
+                    <a className={styles.docA} onClick={()=>alert('正在积极完善中，请稍等几日')}>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle}>
                                 📄️ 微信小程序
