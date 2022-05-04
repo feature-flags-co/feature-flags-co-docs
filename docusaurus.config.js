@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '敏捷开关',
-  staticDirectories: ['public', 'static'],
+  staticDirectories: ['static'],
   tagline: '聪明的团队会交付',
   url: 'https://featureflag.co',
   baseUrl: '/',
@@ -130,16 +130,6 @@ const config = {
       },
     }),
   plugins: [
-    [
-      '@docusaurus/plugin-ideal-image',
-      {
-        quality: 70,
-        max: 530, // max resized image's size.
-        min: 440, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
-        disableInDev: false,
-      },
-    ],
   ]
 };
 

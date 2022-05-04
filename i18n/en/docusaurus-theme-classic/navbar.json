@@ -1,23 +1,19 @@
 {
   "title": {
-    "message": "敏捷开关 | 文档",
+    "message": "敏捷开关 | 文档手册",
     "description": "The title in the navbar"
   },
-  "item.label.主页": {
-    "message": "主页",
-    "description": "Navbar item with label 主页"
+  "item.label.使用文档": {
+    "message": "使用文档",
+    "description": "Navbar item with label 使用文档"
   },
-  "item.label.生态集成": {
-    "message": "生态集成",
-    "description": "Navbar item with label 生态集成"
+  "item.label.使用指南": {
+    "message": "使用指南",
+    "description": "Navbar item with label 使用指南"
   },
-  "item.label.SDKs": {
-    "message": "SDKs",
-    "description": "Navbar item with label SDKs"
-  },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
+  "item.label.应用后台": {
+    "message": "应用后台",
+    "description": "Navbar item with label 应用后台"
   },
   "item.label. ": {
     "message": " ",

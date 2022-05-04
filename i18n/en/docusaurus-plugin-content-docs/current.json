@@ -3,12 +3,60 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
-    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.基础教程": {
+    "message": "基础教程",
+    "description": "The label for category 基础教程 in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.使用 feature flags": {
+    "message": "使用 feature flags",
+    "description": "The label for category 使用 feature flags in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.管理 feature flags": {
+    "message": "管理 feature flags",
+    "description": "The label for category 管理 feature flags in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.目标用户管理": {
+    "message": "目标用户管理",
+    "description": "The label for category 目标用户管理 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Feature flags 高级功能": {
+    "message": "Feature flags 高级功能",
+    "description": "The label for category Feature flags 高级功能 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.团队协同工作流": {
+    "message": "团队协同工作流",
+    "description": "The label for category 团队协同工作流 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.开发集成(SDKs&APIs)": {
+    "message": "开发集成(SDKs&APIs)",
+    "description": "The label for category 开发集成(SDKs&APIs) in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.SDKs": {
+    "message": "SDKs",
+    "description": "The label for category SDKs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.应用集成": {
+    "message": "应用集成",
+    "description": "The label for category 应用集成 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.对照实验": {
+    "message": "对照实验",
+    "description": "The label for category 对照实验 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.数据同步与导出": {
+    "message": "数据同步与导出",
+    "description": "The label for category 数据同步与导出 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.IAM与团队管理": {
+    "message": "IAM与团队管理",
+    "description": "The label for category IAM与团队管理 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.日志管理": {
+    "message": "日志管理",
+    "description": "The label for category 日志管理 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.账单管理": {
+    "message": "账单管理",
+    "description": "The label for category 账单管理 in sidebar tutorialSidebar"
   }
 }

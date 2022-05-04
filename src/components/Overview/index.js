@@ -22,7 +22,7 @@ export default function Overview() {
                     </a>
                 </div>
                 <div className={clsx('col col--6 ')}>
-                    <a className={styles.docA} href=''>
+                    <a className={styles.docA} href='/docs/feature-flags/using-feature-flags/targeting-users'>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle}>
                                 📄️ 使用 feature flags
@@ -65,7 +65,7 @@ export default function Overview() {
                     </a>
                 </div>
                 <div className={clsx('col col--4 ')}>
-                    <a className={styles.docA} href='/docs/advanced-feature-flags/code-reference%20copy'>
+                    <a className={styles.docA} href='/docs/advanced-feature-flags/code-reference'>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle} style={{ marginBottom: "0px" }}>
                                 📄️ Feature flags 高级功能
@@ -85,7 +85,7 @@ export default function Overview() {
                 </div>
                 
                 <div className={clsx('col col--4 ')}>
-                    <a className={styles.docA} href='/docs/advanced-feature-flags/code-reference%20copy'>
+                    <a className={styles.docA} href='/docs/team-management/project-management'>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle} style={{ marginBottom: "0px" }}>
                                 📄️ IAM与团队管理
@@ -95,7 +95,7 @@ export default function Overview() {
                 </div>
                 
                 <div className={clsx('col col--4 ')}>
-                    <a className={styles.docA} href='/docs/advanced-feature-flags/code-reference%20copy'>
+                    <a className={styles.docA} href='/docs/experimentation/AB测试'>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle} style={{ marginBottom: "0px" }}>
                                 📄️ 对照实验
@@ -116,7 +116,7 @@ export default function Overview() {
                 </div> */}
 
                 <div className={clsx('col col--6 ')}>
-                    <a className={styles.docA} href='/docs/feature-flags/organize-feature-flags/flag-list'>
+                    <a className={styles.docA} href='/docs/sdks/overview'>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle}>
                                 📄️ 开发集成
@@ -128,7 +128,7 @@ export default function Overview() {
                     </a>
                 </div>
                 <div className={clsx('col col--6 ')}>
-                    <a className={styles.docA} href='/docs/feature-flags/user-and-segment/user-list'>
+                    <a className={styles.docA} href='/docs/integration/overview'>
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle}>
                                 📄️ 应用集成

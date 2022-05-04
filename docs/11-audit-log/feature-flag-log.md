@@ -1,8 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Flag 使用统计
-
+# Feature flags 变更日志
 
 文档正在编写中，请您稍等。
