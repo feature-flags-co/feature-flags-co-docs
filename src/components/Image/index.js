@@ -6,7 +6,9 @@ export default function Image(props) {
 
     const mystyle = {
         width: props.width,
-        maxWidth: props.maxWidth
+        maxWidth: props.maxWidth,
+        border: "1px solid gray",
+        padding: "0px"
       };
     return (
         // <img src={require('@site/static/img/docs/empower-all-team.png').default} />

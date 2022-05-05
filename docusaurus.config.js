@@ -85,6 +85,9 @@ const config = {
             position: 'right',
           },
         ],
+      },  
+      tableOfContents: {
+        maxHeadingLevel: 5,
       },
       prism: {
         theme: lightCodeTheme,
