@@ -168,7 +168,7 @@ Component({
     // you can always get the value of a flag with the following code
     const variation = ffcClient.variation('flagkey', 'defaultValue');
     // a syntactic sugar exist for boolean value
-    // cont variation = ffcClient.boolVariation('flagkey', false);
+    // const variation = ffcClient.boolVariation('flagkey', false);
     console.log(variation);
 
     // to execute any code when flag value changes
