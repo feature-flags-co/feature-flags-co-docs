@@ -66,7 +66,7 @@ const config = {
           //   position: 'left',
           //   label: '开发集成(SDKs&APIs)',
           // },
-          { to: '/blog', label: '使用指南', position: 'left' },
+          { href: 'https://zhuanlan.zhihu.com/p/431153001', label: '使用指南', position: 'left' },
           { href: 'https://portal.featureflag.co', label: '应用后台', position: 'left' },
 
           // {

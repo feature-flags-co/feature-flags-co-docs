@@ -7,9 +7,15 @@ sidebar_position: 6
 :::tip
 当前文档的Release版本 (v0.0.5)。[点击查看GitHub的Release地址](https://github.com/feature-flags-co/ffc-wechat-miniprogram-sdk/releases/tag/V0.0.5)。
 :::
+
+:::tip
+此SDK支持 javascript 和 typescript 两种模式
+
+发布小程序前请确保已将 https://api.featureflag.co 添加到小程序合法域名中
+:::
+
 ## 
 
-**发布小程序前请确保已将 https://api.featureflag.co 添加到小程序合法域名中**
 
 ## 概述
 SDK 主要完成以下工作:
