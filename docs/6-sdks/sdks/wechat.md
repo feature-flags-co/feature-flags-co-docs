@@ -121,6 +121,7 @@ App({
 SDK 初始化时会向服务器发送请求并建立 WebSocket 连接， 这个过程耗时 100 毫秒左右。如果希望 feature flags 立即可用，可以在初始化时通过 bootstrap 提供本地 feature flags, 这时会立即触发 ready event。初始化完成后 SDK 会用服务端数据替换本地数据。
 
 ### 获取 feature flag 的值
+SDK 会将 flagConfigs 中配置的 feature flags 自动生成一个 flags 对象并填充到 Page 或者 Component 的 data 中，JavaScript 代码中引用方式为 **this.data.flags['flagkey']**, wxml 中则可以通过 **flags['flagkey']** 方式引用。
 
 ```javascript
 import ffcClient from "ffc-wechat-miniprogram-sdk";
