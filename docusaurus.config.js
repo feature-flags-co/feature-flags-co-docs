@@ -13,7 +13,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
   organizationName: '北京心跳率科技有限公司', // Usually your GitHub org/user name.
   projectName: '敏捷开关', // Usually your repo name.
   // themes: ['@docusaurus/theme-search-algolia'],
