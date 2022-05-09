@@ -59,7 +59,7 @@ npm i
 npm run build
 ```
 
-3. 将 **build** 文件夹复制到小程序项目根目录并且重新命名为 ffc-wechat-miniprogram-sdk
+3. 将 **dist** 文件夹复制到小程序项目根目录并且重新命名为 ffc-wechat-miniprogram-sdk
 
 4. 引入 SDK:
 ```javascript
