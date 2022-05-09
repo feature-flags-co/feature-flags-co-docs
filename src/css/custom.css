@@ -127,7 +127,7 @@ html[data-theme='light'] footer {
   }
 
   .navbar__brand {
-    margin-right: 119px;
+    margin-right: 90px;
   }
 
   .navbar__title {
@@ -141,8 +141,13 @@ html[data-theme='light'] footer {
   .markdown ul li {
     font-size: 14px;
   }
+
   .markdown ul {
     padding-left: 15px;
+  }
+
+  code {
+    font-size: 14px !important;
   }
 }
 
