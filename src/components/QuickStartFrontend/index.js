@@ -35,7 +35,9 @@ export default function QuickStartFrontend() {
 
             <div className="row">
                 <div className={clsx('col col--6 ')}>
-                    <a className={styles.docA} onClick={()=>alert('正在积极完善中，请稍等几日')}>
+                    <a  className={styles.docA} 
+                        // onClick={()=>alert('正在积极完善中，请稍等几日')}
+                        href="/docs/quick-start/微信小程序快速入门">
                         <div className={styles.docCategory}>
                             <h5 className={styles.docTitle}>
                                 📄️ 微信小程序
