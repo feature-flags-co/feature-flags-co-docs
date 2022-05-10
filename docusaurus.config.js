@@ -80,10 +80,10 @@ const config = {
             className: 'header-github-link', 'aria-label': 'GitHub repository',
             target: '_blank'
           },
-          {
-            type: 'search',
-            position: 'right',
-          },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
         ],
       },  
       tableOfContents: {
@@ -93,29 +93,29 @@ const config = {
         theme: lightCodeTheme,
         // darkTheme: darkCodeTheme,
       },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'EMOB5QI6ZL',
+      // algolia: {
+      //   // The application ID provided by Algolia
+      //   appId: 'EMOB5QI6ZL',
 
-        // Public API key: it is safe to commit it
-        apiKey: '786a9155e7266ee47d29a75ef846cf9a',
+      //   // Public API key: it is safe to commit it
+      //   apiKey: '786a9155e7266ee47d29a75ef846cf9a',
 
-        indexName: 'featureflagco_doc',
+      //   indexName: 'featureflagco_doc',
 
-        // Optional: see doc section below
-        contextualSearch: true,
+      //   // Optional: see doc section below
+      //   contextualSearch: true,
 
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
+      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      //   externalUrlRegex: 'external\\.com|domain\\.com',
 
-        // Optional: Algolia search parameters
-        searchParameters: {},
+      //   // Optional: Algolia search parameters
+      //   searchParameters: {},
 
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
+      //   // Optional: path for search page that enabled by default (`false` to disable it)
+      //   searchPagePath: 'search',
 
-        //... other Algolia params
-      },
+      //   //... other Algolia params
+      // },
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
