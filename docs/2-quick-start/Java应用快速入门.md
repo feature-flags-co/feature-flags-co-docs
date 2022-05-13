@@ -102,7 +102,7 @@ FFCClient client = new FFCClientImp(envSecret);
 
 其他的内置属性都是可选的，您还可自定义属性。比如定义目标用户的 `age`属性。
 
-接下来根据目标用户获得feature flag的值，输入您刚才设置的feature flag对应的keyName，user以及默认值（当SDK发生错误时，默认的返回值），通过 `initialize` 属性可以判断SDK是否成功初始化，`boolVariation`函数用于计算feature flag的值，返回值为boolean类型。
+接下来根据目标用户获得feature flag的值，输入您刚才设置的feature flag对应的keyName，user以及默认值（当SDK发生错误时，默认的返回值），通过 `FFCClient#isInitialized()` 可以判断SDK是否成功初始化，`boolVariation`函数用于计算feature flag的值，返回值为boolean类型。
 
 SDK 支持 String，Boolean，Number 类型的flag value。
 ```java
@@ -131,7 +131,7 @@ SDK 支持 String，Boolean，Number 类型的flag value。
 
 <Image maxWidth="660px" width="100%" src="/img/docs/quick-start/wechat/update-to-true.png" />
 
-重新运行上述程序，会显示`new_function`的输出结果Hello, new function（模拟新版功能）。我们成功的控制了功能模块的发布！
+重新运行上述程序，会显示`newFunction`的输出结果Hello, new function（模拟新版功能）。我们成功的控制了功能模块的发布！
 
 当`newFunction`由于某些原因无法正常运行的时候，我们可以将《默认返回值》改回`false`或是直接关闭开关，这样程序就回滚到原来的版本！
 
