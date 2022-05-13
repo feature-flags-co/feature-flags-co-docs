@@ -93,9 +93,9 @@ if client._update_status_provider.wait_for_OKState():
 SDK在本地计算给地目标用户的feature flag，然后返回一个数值或是一个描述feature flag返回值详情的对象
 
 `User`: 目标用户，一组可以用于feature flag评估的属性，通常是您程序中的用户信息。
-这个对象包含4个内置属性(`key`, `name`, `email` 和 `country`)。 只有`key`属性是必须的，用于标识目标用户。
+这个对象包含4个内置属性(`key`, `name`, `email` 和 `country`)。 其中`key`和`name`属性是必须的，`key`用于标识目标用户，`name`属性方便查找目标用户。
 
-其他的内置属性都是可选的，但建议设置`name`属性方便查找目标用户。您还可以K/V的方式自定义属性。
+其他的内置属性都是可选的，您还可以K/V的方式自定义属性。
 
 ```python
 if client.initialize:
@@ -123,7 +123,7 @@ if client.initialize:
 
 A/B/n测试支持pageviews和clicks事件的自动捕捉。如果需要捕捉自定义事件，SDK提供了`track_metric`函数。
 ```python
-client.track_metric(user, event_name, numeric_value);
+client.track_metric(user, event_name, numeric_value)
 ```
 **numeric_value**参数为可选项，默认值为 **1**.
 

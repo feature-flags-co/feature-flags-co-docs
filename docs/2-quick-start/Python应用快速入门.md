@@ -91,7 +91,7 @@ user = {'key': user_key, 'name': user_name}
 这个对象包含4个内置属性(`key`, `name`, `email` 和 `country`)。 其中`key`和`name`属性是必须的，`key`用于标识目标用户，`name`属性方便查找目标用户
 
 其他的内置属性都是可选的，您还可以K/V的方式自定义属性。比如定义如下目标用户，`age`为自定义属性。
-```
+```python
 user = {'key': user_key, 'name': user_name, 'age': user_age}
 ```
 
