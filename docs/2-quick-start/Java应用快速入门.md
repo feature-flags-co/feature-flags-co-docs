@@ -47,8 +47,10 @@ public void newFunction(){
 }
     
 
-public void oldFunction():
+public void oldFunction(){
     System.out.println("Oh, this is old function");
+}
+    
 ```
 
 :::
@@ -119,7 +121,7 @@ SDK 支持 String，Boolean，Number 类型的flag value。
         }
 
     }
-
+```
 
 ## 发布/回滚(开/关) feature
 
