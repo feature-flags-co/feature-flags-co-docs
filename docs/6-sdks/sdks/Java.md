@@ -172,7 +172,7 @@ SDK在本地计算给地目标用户的feature flag，然后返回一个数值�
         // 仅仅获取flag value
         String res = client.variation("flag key", user, "Not Found");
         // 获取全部flag variations
-        FlagState<String> res = client.getAllLatestFlagsVariations(user);
+        AllFlagStates<String> res = client.getAllLatestFlagsVariations(user);
     }
     
 ```
