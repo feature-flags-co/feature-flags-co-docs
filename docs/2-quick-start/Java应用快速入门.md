@@ -31,11 +31,11 @@ Feature flag 被建立后，会初始化两个返回值 `true` 和 `false` ，�
 
 当前，我们保留《默认返回值》的开关返回值设置为 `false`。
 
-## 在Python应用中集成并使用 feature flag
+## 在Java应用中集成并使用 feature flag
 
 :::tip
 
-该快速入门教程所用SDK的版本为1.1.1[点击查看GitHub的Release地址](https://github.com/feature-flags-co/ffc-java-sdk/releases/tag/ffc-java-server-sdk_v1.1.1)。
+本快速入门教程所用SDK的版本为1.1.1[点击查看GitHub的Release地址](https://github.com/feature-flags-co/ffc-java-sdk/releases/tag/ffc-java-server-sdk_v1.1.1)。
 
 [关于完整的 SDK 介绍与使用，可以点击查看教程《Java Server SDK》](/docs/sdks/sdks/Java)。
 
@@ -104,7 +104,7 @@ FFCClient client = new FFCClientImp(envSecret);
 
 接下来根据目标用户获得feature flag的值，输入您刚才设置的feature flag对应的keyName，user以及默认值（当SDK发生错误时，默认的返回值），通过 `FFCClient#isInitialized()` 可以判断SDK是否成功初始化，`boolVariation`函数用于计算feature flag的值，返回值为boolean类型。
 
-SDK 支持 String，Boolean，Number 类型的flag value。
+SDK 支持 String，Boolean，Number 类型的flag value，提供支持这些类型的variation的函数获得相应的flag value。
 ```java
     // 初始化 SDK
     FFCClient client = new FFCClientImp(envSecret);
